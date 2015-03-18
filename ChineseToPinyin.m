@@ -1,23 +1,13 @@
-//
-//  ChineseToPinyin.m
-//  LianPu
-//
-//  Created by shawnlee on 10-12-16.
-//  Copyright 2010 lianpu. All rights reserved.
-//
-
 #import "ChineseToPinyin.h"
 
-NSString* FindLetter(int nCode)
-{
-	NSString* strValue = @"";
-	switch(nCode)
-	{
+NSString *FindLetter(int nCode) {
+	NSString *strValue = @"";
+	switch(nCode) {
 		case 6325:
 		case 6436:
 		case 7571:
 		case 7925:
-			strValue= @"A";
+			strValue = @"A";
 			break;
 		case 6263:
 		case 6440:
@@ -27,7 +17,7 @@ NSString* FindLetter(int nCode)
 		case 7733:
 		case 7945:
 		case 8616:
-			strValue= @"AI";
+			strValue = @"AI";
 			break;
 		case 5847:
 		case 5991:
@@ -38,10 +28,10 @@ NSString* FindLetter(int nCode)
 		case 7907:
 		case 8038:
 		case 8786:
-			strValue= @"AN";
+			strValue = @"AN";
 			break;
-			strValue= @"ANG";
-			break;
+//			strValue = @"ANG";
+//			break;
 		case 5974:
 		case 6254:
 		case 6427:
@@ -56,7 +46,7 @@ NSString* FindLetter(int nCode)
 		case 8643:
 		case 8701:
 		case 8773:
-			strValue= @"AO";
+			strValue = @"AO";
 			break;
 		case 6056:
 		case 6135:
@@ -65,12 +55,12 @@ NSString* FindLetter(int nCode)
 		case 8446:
 		case 8649:
 		case 8741:
-			strValue= @"BA";
+			strValue = @"BA";
 			break;
 		case 6267:
 		case 6334:
 		case 7494:
-			strValue= @"BAI";
+			strValue = @"BAI";
 			break;
 		case 5870:
 		case 5964:
@@ -78,11 +68,11 @@ NSString* FindLetter(int nCode)
 		case 8103:
 		case 8113:
 		case 8418:
-			strValue= @"BAN";
+			strValue = @"BAN";
 			break;
 		case 6182:
 		case 6826:
-			strValue= @"BANG";
+			strValue = @"BANG";
 			break;
 		case 6165:
 		case 7063:
@@ -91,7 +81,7 @@ NSString* FindLetter(int nCode)
 		case 8157:
 		case 8532:
 		case 8621:
-			strValue= @"BAO";
+			strValue = @"BAO";
 			break;
 		case 5635:
 		case 5873:
@@ -104,17 +94,17 @@ NSString* FindLetter(int nCode)
 		case 8156:
 		case 8645:
 		case 8725:
-			strValue= @"BEI";
+			strValue = @"BEI";
 			break;
 		case 5946:
 		case 5948:
 		case 7458:
 		case 7928:
-			strValue= @"BEN";
+			strValue = @"BEN";
 			break;
 		case 6452:
 		case 7420:
-			strValue= @"BENG";
+			strValue = @"BENG";
 			break;
 		case 5616:
 		case 5734:
@@ -144,7 +134,7 @@ NSString* FindLetter(int nCode)
 		case 8437:
 		case 8547:
 		case 8734:
-			strValue= @"BI";
+			strValue = @"BI";
 			break;
 		case 5650:
 		case 5945:
@@ -161,7 +151,7 @@ NSString* FindLetter(int nCode)
 		case 8289:
 		case 8354:
 		case 8693:
-			strValue= @"BIAN";
+			strValue = @"BIAN";
 			break;
 		case 7027:
 		case 7084:
@@ -173,10 +163,10 @@ NSString* FindLetter(int nCode)
 		case 8149:
 		case 8707:
 		case 8752:
-			strValue= @"BIAO";
+			strValue = @"BIAO";
 			break;
 		case 8531:
-			strValue= @"BIE";
+			strValue = @"BIE";
 			break;
 		case 5747:
 		case 6557:
@@ -188,12 +178,12 @@ NSString* FindLetter(int nCode)
 		case 7957:
 		case 8738:
 		case 8762:
-			strValue= @"BIN";
+			strValue = @"BIN";
 			break;
 		case 5787:
 		case 5891:
 		case 6280:
-			strValue= @"BING";
+			strValue = @"BING";
 			break;
 		case 5781:
 		case 6403:
@@ -206,7 +196,7 @@ NSString* FindLetter(int nCode)
 		case 8404:
 		case 8543:
 		case 8559:
-			strValue= @"BO";
+			strValue = @"BO";
 			break;
 		case 6318:
 		case 6945:
@@ -215,39 +205,39 @@ NSString* FindLetter(int nCode)
 		case 7848:
 		case 7863:
 		case 8519:
-			strValue= @"BU";
+			strValue = @"BU";
 			break;
 		case 6474:
 		case 7769:
-			strValue= @"CA";
+			strValue = @"CA";
 			break;
-			strValue= @"CAI";
-			break;
+//			strValue = @"CAI";
+//			break;
 		case 6978:
 		case 7078:
 		case 7218:
 		case 8451:
 		case 8785:
-			strValue= @"CAN";
+			strValue = @"CAN";
 			break;
 		case 5687:
-			strValue= @"CANG";
+			strValue = @"CANG";
 			break;
 		case 6448:
 		case 6878:
 		case 8309:
 		case 8429:
-			strValue= @"CAO";
+			strValue = @"CAO";
 			break;
 		case 6692:
-			strValue= @"CE";
+			strValue = @"CE";
 			break;
 		case 6515:
 		case 6825:
-			strValue= @"CEN";
+			strValue = @"CEN";
 			break;
 		case 6465:
-			strValue= @"CENG";
+			strValue = @"CENG";
 			break;
 		case 6639:
 		case 6766:
@@ -259,13 +249,13 @@ NSString* FindLetter(int nCode)
 		case 7942:
 		case 7979:
 		case 8135:
-			strValue= @"CHA";
+			strValue = @"CHA";
 			break;
 		case 5713:
 		case 7846:
 		case 8091:
 		case 8218:
-			strValue= @"CHAI";
+			strValue = @"CHAI";
 			break;
 		case 5770:
 		case 5838:
@@ -281,7 +271,7 @@ NSString* FindLetter(int nCode)
 		case 7966:
 		case 8324:
 		case 8580:
-			strValue= @"CHAN";
+			strValue = @"CHAN";
 			break;
 		case 5686:
 		case 5943:
@@ -295,16 +285,16 @@ NSString* FindLetter(int nCode)
 		case 7438:
 		case 7509:
 		case 8680:
-			strValue= @"CHANG";
+			strValue = @"CHANG";
 			break;
 		case 6687:
 		case 7443:
 		case 8173:
-			strValue= @"CHAO";
+			strValue = @"CHAO";
 			break;
 		case 5969:
 		case 7726:
-			strValue= @"CHE";
+			strValue = @"CHE";
 			break;
 		case 5840:
 		case 5863:
@@ -315,7 +305,7 @@ NSString* FindLetter(int nCode)
 		case 7320:
 		case 7755:
 		case 8619:
-			strValue= @"CHEN";
+			strValue = @"CHEN";
 			break;
 		case 5609:
 		case 5984:
@@ -328,7 +318,7 @@ NSString* FindLetter(int nCode)
 		case 8146:
 		case 8241:
 		case 8508:
-			strValue= @"CHENG";
+			strValue = @"CHENG";
 			break;
 		case 5749:
 		case 6015:
@@ -351,21 +341,21 @@ NSString* FindLetter(int nCode)
 		case 8489:
 		case 8556:
 		case 8746:
-			strValue= @"CHI";
+			strValue = @"CHI";
 			break;
 		case 6091:
 		case 6671:
 		case 6731:
 		case 8409:
 		case 8430:
-			strValue= @"CHONG";
+			strValue = @"CHONG";
 			break;
 		case 5717:
 		case 6492:
 		case 6716:
 		case 8112:
 		case 8637:
-			strValue= @"CHOU";
+			strValue = @"CHOU";
 			break;
 		case 5601:
 		case 5927:
@@ -379,47 +369,47 @@ NSString* FindLetter(int nCode)
 		case 8260:
 		case 8573:
 		case 8777:
-			strValue= @"CHU";
+			strValue = @"CHU";
 			break;
 		case 6285:
 		case 6408:
 		case 7590:
 		case 8563:
-			strValue= @"CHUAI";
+			strValue = @"CHUAI";
 			break;
 		case 6622:
 		case 6955:
 		case 7516:
 		case 7843:
 		case 8413:
-			strValue= @"CHUAN";
+			strValue = @"CHUAN";
 			break;
 		case 6675:
-			strValue= @"CHUANG";
+			strValue = @"CHUANG";
 			break;
 		case 5879:
 		case 7302:
 		case 7319:
-			strValue= @"CHUI";
+			strValue = @"CHUI";
 			break;
 		case 6127:
 		case 8040:
 		case 8277:
-			strValue= @"CHUN";
+			strValue = @"CHUN";
 			break;
 		case 7401:
 		case 8554:
 		case 8626:
-			strValue= @"CHUO";
+			strValue = @"CHUO";
 			break;
-			strValue= @"CI";
-			break;
+//			strValue = @"CI";
+//			break;
 		case 6075:
 		case 6358:
 		case 7684:
 		case 8043:
 		case 8457:
-			strValue= @"4337 À≈";
+			strValue = @"4337 À≈";
 			break;
 		case 6042:
 		case 6840:
@@ -427,12 +417,12 @@ NSString* FindLetter(int nCode)
 		case 7193:
 		case 7214:
 		case 7240:
-			strValue= @"CONG";
+			strValue = @"CONG";
 			break;
 		case 7308:
 		case 7403:
 		case 7577:
-			strValue= @"COU";
+			strValue = @"COU";
 			break;
 		case 6180:
 		case 6562:
@@ -441,13 +431,13 @@ NSString* FindLetter(int nCode)
 		case 8501:
 		case 8530:
 		case 8577:
-			strValue= @"CU";
+			strValue = @"CU";
 			break;
 		case 5764:
 		case 6305:
 		case 7664:
 		case 7973:
-			strValue= @"CUAN";
+			strValue = @"CUAN";
 			break;
 		case 6718:
 		case 6145:
@@ -456,11 +446,11 @@ NSString* FindLetter(int nCode)
 		case 7333:
 		case 7505:
 		case 8631:
-			strValue= @"CUI";
+			strValue = @"CUI";
 			break;
 		case 6666:
 		case 8169:
-			strValue= @"CUN";
+			strValue = @"CUN";
 			break;
 		case 5640:
 		case 6547:
@@ -470,7 +460,7 @@ NSString* FindLetter(int nCode)
 		case 8078:
 		case 8526:
 		case 8567:
-			strValue= @"CUO";
+			strValue = @"CUO";
 			break;
 		case 6239:
 		case 6353:
@@ -481,7 +471,7 @@ NSString* FindLetter(int nCode)
 		case 8346:
 		case 8716:
 		case 8718:
-			strValue= @"DA";
+			strValue = @"DA";
 			break;
 		case 6004:
 		case 6316:
@@ -490,7 +480,7 @@ NSString* FindLetter(int nCode)
 		case 7110:
 		case 7173:
 		case 8776:
-			strValue= @"DAI";
+			strValue = @"DAI";
 			break;
 		case 5757:
 		case 6144:
@@ -502,7 +492,7 @@ NSString* FindLetter(int nCode)
 		case 8087:
 		case 8185:
 		case 8376:
-			strValue= @"DAN";
+			strValue = @"DAN";
 			break;
 		case 5852:
 		case 5942:
@@ -511,16 +501,16 @@ NSString* FindLetter(int nCode)
 		case 7724:
 		case 7885:
 		case 8141:
-			strValue= @"DANG";
+			strValue = @"DANG";
 			break;
 		case 6322:
 		case 6665:
 		case 7514:
 		case 8478:
-			strValue= @"DAO";
+			strValue = @"DAO";
 			break;
 		case 7929:
-			strValue= @"DE";
+			strValue = @"DE";
 			break;
 		case 6466:
 		case 6556:
@@ -528,7 +518,7 @@ NSString* FindLetter(int nCode)
 		case 7767:
 		case 7975:
 		case 8403:
-			strValue= @"DENG";
+			strValue = @"DENG";
 			break;
 		case 5621:
 		case 5765:
@@ -549,10 +539,10 @@ NSString* FindLetter(int nCode)
 		case 7965:
 		case 8438:
 		case 8730:
-			strValue= @"DI";
+			strValue = @"DI";
 			break;
 		case 6439:
-			strValue= @"DIA";
+			strValue = @"DIA";
 			break;
 		case 5871:
 		case 5967:
@@ -563,12 +553,12 @@ NSString* FindLetter(int nCode)
 		case 8118:
 		case 8401:
 		case 8558:
-			strValue= @"DIAN";
+			strValue = @"DIAN";
 			break;
 		case 7886:
 		case 8585:
 		case 8684:
-			strValue= @"DIAO";
+			strValue = @"DIAO";
 			break;
 		case 5976:
 		case 6006:
@@ -579,7 +569,7 @@ NSString* FindLetter(int nCode)
 		case 8183:
 		case 8562:
 		case 8688:
-			strValue= @"DIE";
+			strValue = @"DIE";
 			break;
 		case 5674:
 		case 6404:
@@ -590,10 +580,10 @@ NSString* FindLetter(int nCode)
 		case 8059:
 		case 8184:
 		case 8490:
-			strValue= @"DING";
+			strValue = @"DING";
 			break;
 		case 7891:
-			strValue= @"DIU";
+			strValue = @"DIU";
 			break;
 		case 5977:
 		case 6343:
@@ -604,13 +594,13 @@ NSString* FindLetter(int nCode)
 		case 7556:
 		case 7747:
 		case 8020:
-			strValue= @"DONG";
+			strValue = @"DONG";
 			break;
 		case 6190:
 		case 8128:
 		case 8229:
 		case 8391:
-			strValue= @"DOU";
+			strValue = @"DOU";
 			break;
 		case 6022:
 		case 6429:
@@ -621,17 +611,17 @@ NSString* FindLetter(int nCode)
 		case 8338:
 		case 8739:
 		case 8782:
-			strValue= @"DU";
+			strValue = @"DU";
 			break;
 		case 7318:
 		case 7649:
 		case 8393:
-			strValue= @"DUAN";
+			strValue = @"DUAN";
 			break;
 		case 7701:
 		case 7713:
 		case 7752:
-			strValue= @"DUI";
+			strValue = @"DUI";
 			break;
 		case 6771:
 		case 7632:
@@ -640,7 +630,7 @@ NSString* FindLetter(int nCode)
 		case 7779:
 		case 7970:
 		case 8527:
-			strValue= @"DUN";
+			strValue = @"DUN";
 			break;
 		case 6345:
 		case 6365:
@@ -649,7 +639,7 @@ NSString* FindLetter(int nCode)
 		case 7876:
 		case 8154:
 		case 8566:
-			strValue= @"DUO";
+			strValue = @"DUO";
 			break;
 		case 5612:
 		case 5832:
@@ -669,11 +659,11 @@ NSString* FindLetter(int nCode)
 		case 8042:
 		case 8206:
 		case 8689:
-			strValue= @"E";
+			strValue = @"E";
 			break;
 		case 6176:
 		case 6284:
-			strValue= @"EN";
+			strValue = @"EN";
 			break;
 		case 5706:
 		case 6939:
@@ -681,11 +671,11 @@ NSString* FindLetter(int nCode)
 		case 7879:
 		case 8025:
 		case 8660:
-			strValue= @"ER";
+			strValue = @"ER";
 			break;
 		case 5950:
 		case 7732:
-			strValue= @"FA";
+			strValue = @"FA";
 			break;
 		case 6212:
 		case 6232:
@@ -694,14 +684,14 @@ NSString* FindLetter(int nCode)
 		case 7660:
 		case 7818:
 		case 8576:
-			strValue= @"FAN";
+			strValue = @"FAN";
 			break;
 		case 5890:
 		case 7242:
 		case 7853:
 		case 8419:
 		case 8648:
-			strValue= @"FANG";
+			strValue = @"FANG";
 			break;
 		case 6032:
 		case 6584:
@@ -720,14 +710,14 @@ NSString* FindLetter(int nCode)
 		case 8468:
 		case 8613:
 		case 8678:
-			strValue= @"FEI";
+			strValue = @"FEI";
 			break;
 		case 5739:
 		case 6915:
 		case 7291:
 		case 8687:
 		case 8787:
-			strValue= @"FEN";
+			strValue = @"FEN";
 			break;
 		case 5726:
 		case 5926:
@@ -735,12 +725,12 @@ NSString* FindLetter(int nCode)
 		case 6384:
 		case 6767:
 		case 7731:
-			strValue= @"FENG";
+			strValue = @"FENG";
 			break;
-			strValue= @"FO";
-			break;
+//			strValue = @"FO";
+//			break;
 		case 8330:
-			strValue= @"FOU";
+			strValue = @"FOU";
 			break;
 		case 5775:
 		case 5776:
@@ -777,21 +767,21 @@ NSString* FindLetter(int nCode)
 		case 8538:
 		case 8654:
 		case 8691:
-			strValue= @"FU";
+			strValue = @"FU";
 			break;
 		case 6246:
 		case 7056:
 		case 7057:
 		case 7424:
 		case 7837:
-			strValue= @" GA";
+			strValue = @" GA";
 			break;
 		case 5604:
 		case 5875:
 		case 5982:
 		case 7414:
 		case 7464:
-			strValue= @"GAI";
+			strValue = @"GAI";
 			break;
 		case 5965:
 		case 6053:
@@ -806,12 +796,12 @@ NSString* FindLetter(int nCode)
 		case 7723:
 		case 8065:
 		case 8491:
-			strValue= @"GAN";
+			strValue = @"GAN";
 			break;
 		case 7716:
 		case 7824:
 		case 8364:
-			strValue= @"GANG";
+			strValue = @"GANG";
 			break;
 		case 5626:
 		case 5830:
@@ -822,7 +812,7 @@ NSString* FindLetter(int nCode)
 		case 7334:
 		case 7429:
 		case 7915:
-			strValue= @"GAO";
+			strValue = @"GAO";
 			break;
 		case 5610:
 		case 5678:
@@ -839,27 +829,27 @@ NSString* FindLetter(int nCode)
 		case 8220:
 		case 8420:
 		case 8732:
-			strValue= @"GE";
+			strValue = @"GE";
 			break;
-			strValue= @"GEI";
-			break;
+//			strValue = @"GEI";
+//			break;
 		case 5608:
 		case 6102:
 		case 6371:
 		case 8462:
-			strValue= @"GEN";
+			strValue = @"GEN";
 			break;
 		case 6376:
 		case 6657:
 		case 7114:
 		case 8665:
-			strValue= @"GENG";
+			strValue = @"GENG";
 			break;
 		case 7178:
 		case 7537:
 		case 8228:
 		case 8601:
-			strValue= @"GONG";
+			strValue = @"GONG";
 			break;
 		case 5694:
 		case 5824:
@@ -873,7 +863,7 @@ NSString* FindLetter(int nCode)
 		case 8349:
 		case 8384:
 		case 8724:
-			strValue= @"GOU";
+			strValue = @"GOU";
 			break;
 		case 5637:
 		case 5812:
@@ -897,7 +887,7 @@ NSString* FindLetter(int nCode)
 		case 8593:
 		case 8681:
 		case 8729:
-			strValue= @"GU";
+			strValue = @"GU";
 			break;
 		case 5652:
 		case 5820:
@@ -905,10 +895,10 @@ NSString* FindLetter(int nCode)
 		case 7273:
 		case 7550:
 		case 8027:
-			strValue= @"GUA";
+			strValue = @"GUA";
 			break;
-			strValue= @"GUAI";
-			break;
+//			strValue = @"GUAI";
+//			break;
 		case 5736:
 		case 6124:
 		case 6272:
@@ -917,13 +907,13 @@ NSString* FindLetter(int nCode)
 		case 8057:
 		case 8170:
 		case 8704:
-			strValue= @"GUAN";
+			strValue = @"GUAN";
 			break;
 		case 6359:
 		case 6578:
 		case 7270:
 		case 7555:
-			strValue= @"GUANG";
+			strValue = @"GUANG";
 			break;
 		case 5648:
 		case 5659:
@@ -936,13 +926,13 @@ NSString* FindLetter(int nCode)
 		case 8394:
 		case 8657:
 		case 8712:
-			strValue= @"GUI";
+			strValue = @"GUI";
 			break;
 		case 5782:
 		case 7121:
 		case 7762:
 		case 8671:
-			strValue= @"GUN";
+			strValue = @"GUN";
 			break;
 		case 5769:
 		case 6266:
@@ -955,15 +945,15 @@ NSString* FindLetter(int nCode)
 		case 8188:
 		case 8268:
 		case 8269:
-			strValue= @"GUO";
+			strValue = @"GUO";
 			break;
 		case 7894:
-			strValue= @"HA";
+			strValue = @"HA";
 			break;
 		case 6443:
 		case 7560:
 		case 8516:
-			strValue= @"HAI";
+			strValue = @"HAI";
 			break;
 		case 5885:
 		case 6153:
@@ -976,12 +966,12 @@ NSString* FindLetter(int nCode)
 		case 8205:
 		case 8232:
 		case 8793:
-			strValue= @"HAN";
+			strValue = @"HAN";
 			break;
 		case 6776:
 		case 7112:
 		case 8194:
-			strValue= @"HANG";
+			strValue = @"HANG";
 			break;
 		case 6179:
 		case 6222:
@@ -993,7 +983,7 @@ NSString* FindLetter(int nCode)
 		case 8009:
 		case 8211:
 		case 8226:
-			strValue= @"HAO";
+			strValue = @"HAO";
 			break;
 		case 5813:
 		case 5932:
@@ -1005,16 +995,16 @@ NSString* FindLetter(int nCode)
 		case 8202:
 		case 8234:
 		case 8471:
-			strValue= @"HE";
+			strValue = @"HE";
 			break;
-			strValue= @"HEI";
-			break;
-			strValue= @"HEN";
-			break;
+//			strValue = @"HEI";
+//			break;
+//			strValue = @"HEN";
+//			break;
 		case 6231:
 		case 7181:
 		case 7276:
-			strValue= @"HENG";
+			strValue = @"HENG";
 			break;
 		case 5768:
 		case 5774:
@@ -1024,7 +1014,7 @@ NSString* FindLetter(int nCode)
 		case 6216:
 		case 6740:
 		case 6792:
-			strValue= @"HONG";
+			strValue = @"HONG";
 			break;
 		case 6009:
 		case 6565:
@@ -1034,7 +1024,7 @@ NSString* FindLetter(int nCode)
 		case 8455:
 		case 8655:
 		case 8731:
-			strValue= @"HOU";
+			strValue = @"HOU";
 			break;
 		case 5792:
 		case 6392:
@@ -1061,16 +1051,16 @@ NSString* FindLetter(int nCode)
 		case 8343:
 		case 8513:
 		case 8590:
-			strValue= @"HU";
+			strValue = @"HU";
 			break;
 		case 7072:
 		case 7275:
 		case 7725:
 		case 7892:
-			strValue= @"HUA";
+			strValue = @"HUA";
 			break;
 		case 8555:
-			strValue= @"HUAI";
+			strValue = @"HUAI";
 			break;
 		case 5928:
 		case 6140:
@@ -1086,7 +1076,7 @@ NSString* FindLetter(int nCode)
 		case 7944:
 		case 8673:
 		case 8763:
-			strValue= @"HUAN";
+			strValue = @"HUAN";
 			break;
 		case 5882:
 		case 6569:
@@ -1099,7 +1089,7 @@ NSString* FindLetter(int nCode)
 		case 8308:
 		case 8382:
 		case 8692:
-			strValue= @"HUANG";
+			strValue = @"HUANG";
 			break;
 		case 5822:
 		case 6078:
@@ -1119,13 +1109,13 @@ NSString* FindLetter(int nCode)
 		case 8219:
 		case 8319:
 		case 8766:
-			strValue= @"HUI";
+			strValue = @"HUI";
 			break;
 		case 5827:
 		case 6638:
 		case 6752:
 		case 6867:
-			strValue= @"HUN";
+			strValue = @"HUN";
 			break;
 		case 5669:
 		case 6229:
@@ -1137,7 +1127,7 @@ NSString* FindLetter(int nCode)
 		case 7976:
 		case 8175:
 		case 8322:
-			strValue= @"HUO";
+			strValue = @"HUO";
 			break;
 		case 5629:
 		case 5632:
@@ -1183,7 +1173,7 @@ NSString* FindLetter(int nCode)
 		case 8674:
 		case 8757:
 		case 8768:
-			strValue= @"JI";
+			strValue = @"JI";
 			break;
 		case 5704:
 		case 5903:
@@ -1203,7 +1193,7 @@ NSString* FindLetter(int nCode)
 		case 8353:
 		case 8434:
 		case 8542:
-			strValue= @"JIA";
+			strValue = @"JIA";
 			break;
 		case 5752:
 		case 5841:
@@ -1233,7 +1223,7 @@ NSString* FindLetter(int nCode)
 		case 8561:
 		case 8668:
 		case 8721:
-			strValue= @"JIAN";
+			strValue = @"JIAN";
 			break;
 		case 6092:
 		case 6814:
@@ -1244,7 +1234,7 @@ NSString* FindLetter(int nCode)
 		case 8180:
 		case 8461:
 		case 8488:
-			strValue= @"JIANG";
+			strValue = @"JIANG";
 			break;
 		case 5714:
 		case 5753:
@@ -1261,7 +1251,7 @@ NSString* FindLetter(int nCode)
 		case 8520:
 		case 8551:
 		case 8662:
-			strValue= @"JIAO";
+			strValue = @"JIAO";
 			break;
 		case 5806:
 		case 5821:
@@ -1277,7 +1267,7 @@ NSString* FindLetter(int nCode)
 		case 8441:
 		case 8658:
 		case 8726:
-			strValue= @"JIE";
+			strValue = @"JIE";
 			break;
 		case 5865:
 		case 6103:
@@ -1291,7 +1281,7 @@ NSString* FindLetter(int nCode)
 		case 7465:
 		case 7478:
 		case 8138:
-			strValue= @"JIN";
+			strValue = @"JIN";
 			break;
 		case 5751:
 		case 5869:
@@ -1306,11 +1296,11 @@ NSString* FindLetter(int nCode)
 		case 7554:
 		case 7570:
 		case 7626:
-			strValue= @"JIANG";
+			strValue = @"JIANG";
 			break;
 		case 6936:
 		case 7671:
-			strValue= @"JIONG";
+			strValue = @"JIONG";
 			break;
 		case 5754:
 		case 6417:
@@ -1321,7 +1311,7 @@ NSString* FindLetter(int nCode)
 		case 8053:
 		case 8481:
 		case 8761:
-			strValue= @"JIU";
+			strValue = @"JIU";
 			break;
 		case 5738:
 		case 5810:
@@ -1350,7 +1340,7 @@ NSString* FindLetter(int nCode)
 		case 8620:
 		case 8634:
 		case 8722:
-			strValue= @"JU";
+			strValue = @"JU";
 			break;
 		case 5918:
 		case 6590:
@@ -1360,7 +1350,7 @@ NSString* FindLetter(int nCode)
 		case 7935:
 		case 7952:
 		case 8633:
-			strValue= @"JUAN";
+			strValue = @"JUAN";
 			break;
 		case 5642:
 		case 5667:
@@ -1380,18 +1370,18 @@ NSString* FindLetter(int nCode)
 		case 7967:
 		case 8574:
 		case 8591:
-			strValue= @"JUE";
+			strValue = @"JUE";
 			break;
 		case 6260:
 		case 8168:
 		case 8362:
 		case 8769:
-			strValue= @"JUN";
+			strValue = @"JUN";
 			break;
 		case 5671:
 		case 6339:
 		case 7544:
-			strValue= @"KA";
+			strValue = @"KA";
 			break;
 		case 5660:
 		case 5978:
@@ -1401,25 +1391,25 @@ NSString* FindLetter(int nCode)
 		case 7888:
 		case 7920:
 		case 7939:
-			strValue= @"KAI";
+			strValue = @"KAI";
 			break;
 		case 5709:
 		case 6108:
 		case 7412:
 		case 7772:
 		case 7811:
-			strValue= @"KAN";
+			strValue = @"KAN";
 			break;
 		case 5688:
 		case 6742:
 		case 7854:
-			strValue= @"KANG";
+			strValue = @"KANG";
 			break;
 		case 6974:
 		case 7264:
 		case 7491:
 		case 7877:
-			strValue= @"KAO";
+			strValue = @"KAO";
 			break;
 		case 6430:
 		case 6519:
@@ -1439,45 +1429,45 @@ NSString* FindLetter(int nCode)
 		case 8204:
 		case 8282:
 		case 8733:
-			strValue= @"KE";
+			strValue = @"KE";
 			break;
 		case 8144:
-			strValue= @"KEN";
+			strValue = @"KEN";
 			break;
 		case 7912:
-			strValue= @"KENG";
+			strValue = @"KENG";
 			break;
 		case 5737:
 		case 6539:
 		case 8377:
-			strValue= @"KONG";
+			strValue = @"KONG";
 			break;
 		case 6050:
 		case 6202:
 		case 6321:
 		case 7778:
 		case 8356:
-			strValue= @"KOU";
+			strValue = @"KOU";
 			break;
 		case 5658:
 		case 6005:
 		case 6423:
 		case 7111:
 		case 8728:
-			strValue= @"KU";
+			strValue = @"KU";
 			break;
 		case 5708:
-			strValue= @"KUA";
+			strValue = @"KUA";
 			break;
 		case 5665:
 		case 5906:
 		case 6364:
 		case 6586:
 		case 7558:
-			strValue= @"KUAI";
+			strValue = @"KUAI";
 			break;
 		case 8737:
-			strValue= @"KUAN";
+			strValue = @"KUAN";
 			break;
 		case 5818:
 		case 5831:
@@ -1487,7 +1477,7 @@ NSString* FindLetter(int nCode)
 		case 6349:
 		case 7094:
 		case 7460:
-			strValue= @"KUANG";
+			strValue = @"KUANG";
 			break;
 		case 5624:
 		case 5649:
@@ -1502,7 +1492,7 @@ NSString* FindLetter(int nCode)
 		case 7805:
 		case 8606:
 		case 8743:
-			strValue= @"KUI";
+			strValue = @"KUI";
 			break;
 		case 6204:
 		case 6245:
@@ -1512,7 +1502,7 @@ NSString* FindLetter(int nCode)
 		case 7152:
 		case 7841:
 		case 8051:
-			strValue= @"LIAO";
+			strValue = @"LIAO";
 			break;
 		case 5793:
 		case 5988:
@@ -1522,7 +1512,7 @@ NSString* FindLetter(int nCode)
 		case 8483:
 		case 8581:
 		case 8764:
-			strValue= @"LIE";
+			strValue = @"LIE";
 			break;
 		case 6194:
 		case 6388:
@@ -1537,7 +1527,7 @@ NSString* FindLetter(int nCode)
 		case 8452:
 		case 8579:
 		case 8775:
-			strValue= @"LIN";
+			strValue = @"LIN";
 			break;
 		case 5925:
 		case 6063:
@@ -1552,7 +1542,7 @@ NSString* FindLetter(int nCode)
 		case 8240:
 		case 8465:
 		case 8676:
-			strValue= @"LING";
+			strValue = @"LING";
 			break;
 		case 6815:
 		case 6962:
@@ -1564,7 +1554,7 @@ NSString* FindLetter(int nCode)
 		case 7954:
 		case 8050:
 		case 8644:
-			strValue= @"LIU";
+			strValue = @"LIU";
 			break;
 		case 5966:
 		case 6055:
@@ -1574,7 +1564,7 @@ NSString* FindLetter(int nCode)
 		case 7542:
 		case 7735:
 		case 8110:
-			strValue= @"LONG";
+			strValue = @"LONG";
 			break;
 		case 5745:
 		case 6168:
@@ -1585,7 +1575,7 @@ NSString* FindLetter(int nCode)
 		case 8179:
 		case 8287:
 		case 8735:
-			strValue= @"LOU";
+			strValue = @"LOU";
 			break;
 		case 6744:
 		case 7321:
@@ -1593,7 +1583,7 @@ NSString* FindLetter(int nCode)
 		case 7918:
 		case 7989:
 		case 8158:
-			strValue= @"L®π";
+			strValue = @"L®π";
 			break;
 		case 5968:
 		case 6303:
@@ -1615,19 +1605,19 @@ NSString* FindLetter(int nCode)
 		case 8392:
 		case 8421:
 		case 8652:
-			strValue= @"LU";
+			strValue = @"LU";
 			break;
 		case 5785:
 		case 7014:
 		case 7279:
 		case 8029:
 		case 8639:
-			strValue= @"LUAN";
+			strValue = @"LUAN";
 			break;
-			strValue= @"L®µE";
-			break;
-			strValue= @"LUN";
-			break;
+//			strValue = @"L®µE";
+//			break;
+//			strValue = @"LUN";
+//			break;
 		case 5732:
 		case 5789:
 		case 6093:
@@ -1642,22 +1632,22 @@ NSString* FindLetter(int nCode)
 		case 7961:
 		case 8107:
 		case 8635:
-			strValue= @"LUO";
+			strValue = @"LUO";
 			break;
 		case 6328:
-			strValue= @"M";
+			strValue = @"M";
 			break;
 		case 6373:
 		case 6579:
 		case 7054:
 		case 7231:
 		case 8301:
-			strValue= @"MA";
+			strValue = @"MA";
 			break;
 		case 5929:
 		case 6104:
 		case 8618:
-			strValue= @"MAI";
+			strValue = @"MAI";
 			break;
 		case 6012:
 		case 6503:
@@ -1668,13 +1658,13 @@ NSString* FindLetter(int nCode)
 		case 8293:
 		case 8709:
 		case 8720:
-			strValue= @"MAN";
+			strValue = @"MAN";
 			break;
 		case 5888:
 		case 6861:
 		case 7743:
 		case 8294:
-			strValue= @"MANG";
+			strValue = @"MANG";
 			break;
 		case 5783:
 		case 6066:
@@ -1689,7 +1679,7 @@ NSString* FindLetter(int nCode)
 		case 7806:
 		case 8317:
 		case 8754:
-			strValue= @"MAO";
+			strValue = @"MAO";
 			break;
 		case 6114:
 		case 6550:
@@ -1701,13 +1691,13 @@ NSString* FindLetter(int nCode)
 		case 8044:
 		case 8139:
 		case 8740:
-			strValue= @"MEI";
+			strValue = @"MEI";
 			break;
 		case 6249:
 		case 7643:
 		case 7715:
 		case 7845:
-			strValue= @"MEN";
+			strValue = @"MEN";
 			break;
 		case 5934:
 		case 6189:
@@ -1720,7 +1710,7 @@ NSString* FindLetter(int nCode)
 		case 8323:
 		case 8427:
 		case 8431:
-			strValue= @"MENG";
+			strValue = @"MENG";
 			break;
 		case 5634:
 		case 5855:
@@ -1736,14 +1726,14 @@ NSString* FindLetter(int nCode)
 		case 8445:
 		case 8767:
 		case 8771:
-			strValue= @"MI";
+			strValue = @"MI";
 			break;
 		case 6770:
 		case 6837:
 		case 6847:
 		case 7579:
 		case 7777:
-			strValue= @"MIAN";
+			strValue = @"MIAN";
 			break;
 		case 6387:
 		case 6967:
@@ -1753,13 +1743,13 @@ NSString* FindLetter(int nCode)
 		case 7721:
 		case 7780:
 		case 8037:
-			strValue= @"MIAO";
+			strValue = @"MIAO";
 			break;
 		case 5631:
 		case 6367:
 		case 8326:
 		case 8390:
-			strValue= @"MIE";
+			strValue = @"MIE";
 			break;
 		case 6069:
 		case 6526:
@@ -1771,7 +1761,7 @@ NSString* FindLetter(int nCode)
 		case 7710:
 		case 8710:
 		case 8628:
-			strValue= @"MIN";
+			strValue = @"MIN";
 			break;
 		case 5804:
 		case 6088:
@@ -1779,10 +1769,10 @@ NSString* FindLetter(int nCode)
 		case 7452:
 		case 7808:
 		case 8504:
-			strValue= @"MING";
+			strValue = @"MING";
 			break;
-			strValue= @"MIU";
-			break;
+//			strValue = @"MIU";
+//			break;
 		case 5851:
 		case 6052:
 		case 6175:
@@ -1796,7 +1786,7 @@ NSString* FindLetter(int nCode)
 		case 8586:
 		case 8588:
 		case 8765:
-			strValue= @"MO";
+			strValue = @"MO";
 			break;
 		case 5716:
 		case 6372:
@@ -1804,7 +1794,7 @@ NSString* FindLetter(int nCode)
 		case 8254:
 		case 8290:
 		case 8642:
-			strValue= @"MOU";
+			strValue = @"MOU";
 			break;
 		case 5679:
 		case 5973:
@@ -1812,22 +1802,22 @@ NSString* FindLetter(int nCode)
 		case 6769:
 		case 7504:
 		case 7866:
-			strValue= @"MU";
+			strValue = @"MU";
 			break;
 		case 6437:
-			strValue= @"N";
+			strValue = @"N";
 			break;
 		case 6264:
 		case 7539:
 		case 7953:
 		case 8136:
-			strValue= @"NA";
+			strValue = @"NA";
 			break;
 		case 5630:
 		case 6021:
 		case 6133:
 		case 7245:
-			strValue= @"NAI";
+			strValue = @"NAI";
 			break;
 		case 6411:
 		case 6478:
@@ -1836,13 +1826,13 @@ NSString* FindLetter(int nCode)
 		case 7578:
 		case 8279:
 		case 8486:
-			strValue= @"NAN";
+			strValue = @"NAN";
 			break;
 		case 6313:
 		case 6476:
 		case 6646:
 		case 7457:
-			strValue= @"NANG";
+			strValue = @"NANG";
 			break;
 		case 5611:
 		case 5981:
@@ -1852,18 +1842,18 @@ NSString* FindLetter(int nCode)
 		case 7748:
 		case 7883:
 		case 8245:
-			strValue= @"NAO";
+			strValue = @"NAO";
 			break;
 		case 5811:
-			strValue= @"NE";
+			strValue = @"NE";
 			break;
-			strValue= @"NEI";
-			break;
+//			strValue = @"NEI";
+//			break;
 		case 7705:
-			strValue= @"NEN";
+			strValue = @"NEN";
 			break;
-			strValue= @"NENG";
-			break;
+//			strValue = @"NENG";
+//			break;
 		case 5703:
 		case 5972:
 		case 6605:
@@ -1874,7 +1864,7 @@ NSString* FindLetter(int nCode)
 		case 7794:
 		case 7874:
 		case 8682:
-			strValue= @"NI";
+			strValue = @"NI";
 			break;
 		case 5605:
 		case 5994:
@@ -1882,15 +1872,15 @@ NSString* FindLetter(int nCode)
 		case 8004:
 		case 8651:
 		case 8683:
-			strValue= @"NIAN";
+			strValue = @"NIAN";
 			break;
-			strValue= @"NIANG";
-			break;
+//			strValue = @"NIANG";
+//			break;
 		case 6064:
 		case 7053:
 		case 7569:
 		case 8433:
-			strValue= @"NIAO";
+			strValue = @"NIAO";
 			break;
 		case 5877:
 		case 6233:
@@ -1898,68 +1888,68 @@ NSString* FindLetter(int nCode)
 		case 8208:
 		case 8411:
 		case 8570:
-			strValue= @"NIE";
+			strValue = @"NIE";
 			break;
-			strValue= @"NIN";
-			break;
+//			strValue = @"NIN";
+//			break;
 		case 5690:
 		case 6344:
 		case 6924:
 		case 8187:
-			strValue= @"NING";
+			strValue = @"NING";
 			break;
 		case 6580:
 		case 6678:
 		case 7004:
-			strValue= @"NIU";
+			strValue = @"NIU";
 			break;
 		case 5715:
 		case 6370:
-			strValue= @"NONG";
+			strValue = @"NONG";
 			break;
 		case 8181:
-			strValue= @"NOU";
+			strValue = @"NOU";
 			break;
 		case 6983:
 		case 7032:
 		case 7059:
 		case 7069:
-			strValue= @"NU";
+			strValue = @"NU";
 			break;
 		case 7704:
 		case 7847:
 		case 8412:
-			strValue= @"N®µ";
+			strValue = @"N®µ";
 			break;
-			strValue= @"NUAN";
-			break;
-			strValue= @"NUE";
-			break;
+//			strValue = @"NUAN";
+//			break;
+//			strValue = @"NUE";
+//			break;
 		case 5748:
 		case 6289:
 		case 6386:
 		case 7927:
-			strValue= @"NUO";
+			strValue = @"NUO";
 			break;
 		case 6424:
 		case 6462:
-			strValue= @"O";
+			strValue = @"O";
 			break;
 		case 5809:
 		case 6670:
 		case 7417:
 		case 8178:
-			strValue= @"OU";
+			strValue = @"OU";
 			break;
 		case 6166:
 		case 7243:
 		case 8365:
-			strValue= @"PA";
+			strValue = @"PA";
 			break;
 		case 5729:
 		case 6169:
 		case 6363:
-			strValue= @"PAI";
+			strValue = @"PAI";
 			break;
 		case 6761:
 		case 6790:
@@ -1967,20 +1957,20 @@ NSString* FindLetter(int nCode)
 		case 8165:
 		case 8320:
 		case 8571:
-			strValue= @"PAN";
+			strValue = @"PAN";
 			break;
 		case 6561:
 		case 6872:
 		case 6944:
 		case 8306:
-			strValue= @"PANG";
+			strValue = @"PANG";
 			break;
 		case 6243:
 		case 6583:
 		case 6650:
 		case 7567:
 		case 8069:
-			strValue= @"PAO";
+			strValue = @"PAO";
 			break;
 		case 6446:
 		case 6490:
@@ -1988,16 +1978,16 @@ NSString* FindLetter(int nCode)
 		case 7934:
 		case 8512:
 		case 8612:
-			strValue= @"PEI";
+			strValue = @"PEI";
 			break;
 		case 6852:
-			strValue= @"PEN";
+			strValue = @"PEN";
 			break;
 		case 6001:
 		case 6456:
 		case 6681:
 		case 8318:
-			strValue= @"PENG";
+			strValue = @"PENG";
 			break;
 		case 5607:
 		case 5682:
@@ -2023,7 +2013,7 @@ NSString* FindLetter(int nCode)
 		case 8223:
 		case 8271:
 		case 8589:
-			strValue= @"PI";
+			strValue = @"PI";
 			break;
 		case 5850:
 		case 7073:
@@ -2031,7 +2021,7 @@ NSString* FindLetter(int nCode)
 		case 7561:
 		case 8470:
 		case 8568:
-			strValue= @"PIAN";
+			strValue = @"PIAN";
 			break;
 		case 5666:
 		case 6449:
@@ -2040,11 +2030,11 @@ NSString* FindLetter(int nCode)
 		case 7372:
 		case 7809:
 		case 8310:
-			strValue= @"PIAO";
+			strValue = @"PIAO";
 			break;
 		case 6054:
 		case 7513:
-			strValue= @"PIE";
+			strValue = @"PIE";
 			break;
 		case 7041:
 		case 6253:
@@ -2052,13 +2042,13 @@ NSString* FindLetter(int nCode)
 		case 7315:
 		case 7482:
 		case 8213:
-			strValue= @"PIN";
+			strValue = @"PIN";
 			break;
 		case 5723:
 		case 7019:
 		case 7250:
 		case 8650:
-			strValue= @"PING";
+			strValue = @"PING";
 			break;
 		case 5647:
 		case 5922:
@@ -2067,11 +2057,11 @@ NSString* FindLetter(int nCode)
 		case 7862:
 		case 8011:
 		case 8345:
-			strValue= @"PO";
+			strValue = @"PO";
 			break;
 		case 5786:
 		case 6269:
-			strValue= @"POU";
+			strValue = @"POU";
 			break;
 		case 5773:
 		case 6459:
@@ -2082,7 +2072,7 @@ NSString* FindLetter(int nCode)
 		case 7968:
 		case 7972:
 		case 8575:
-			strValue= @"PU";
+			strValue = @"PU";
 			break;
 		case 5633:
 		case 5725:
@@ -2120,11 +2110,11 @@ NSString* FindLetter(int nCode)
 		case 8572:
 		case 8702:
 		case 8772:
-			strValue= @"QI";
+			strValue = @"QI";
 			break;
 		case 6154:
 		case 8736:
-			strValue= @"QIA";
+			strValue = @"QIA";
 			break;
 		case 5727:
 		case 5761:
@@ -2146,7 +2136,7 @@ NSString* FindLetter(int nCode)
 		case 7852:
 		case 8215:
 		case 8373:
-			strValue= @"QIAN";
+			strValue = @"QIAN";
 			break;
 		case 6762:
 		case 7045:
@@ -2160,7 +2150,7 @@ NSString* FindLetter(int nCode)
 		case 8262:
 		case 8439:
 		case 8536:
-			strValue= @"QIANG";
+			strValue = @"QIANG";
 			break;
 		case 5668:
 		case 5829:
@@ -2173,7 +2163,7 @@ NSString* FindLetter(int nCode)
 		case 7745:
 		case 8546:
 		case 8719:
-			strValue= @"QIAO";
+			strValue = @"QIAO";
 			break;
 		case 5907:
 		case 6711:
@@ -2181,7 +2171,7 @@ NSString* FindLetter(int nCode)
 		case 7492:
 		case 7938:
 		case 8370:
-			strValue= @"QIE";
+			strValue = @"QIE";
 			break;
 		case 6043:
 		case 6276:
@@ -2193,7 +2183,7 @@ NSString* FindLetter(int nCode)
 		case 7923:
 		case 8291:
 		case 8432:
-			strValue= @"QIN";
+			strValue = @"QIN";
 			break;
 		case 6060:
 		case 6485:
@@ -2205,7 +2195,7 @@ NSString* FindLetter(int nCode)
 		case 8605:
 		case 8675:
 		case 8784:
-			strValue= @"QING";
+			strValue = @"QING";
 			break;
 		case 5886:
 		case 6068:
@@ -2214,7 +2204,7 @@ NSString* FindLetter(int nCode)
 		case 8344:
 		case 8528:
 		case 8638:
-			strValue= @"QIONG";
+			strValue = @"QIONG";
 			break;
 		case 5720:
 		case 5947:
@@ -2231,7 +2221,7 @@ NSString* FindLetter(int nCode)
 		case 8460:
 		case 8690:
 		case 8792:
-			strValue= @"QIU";
+			strValue = @"QIU";
 			break;
 		case 5816:
 		case 5930:
@@ -2252,7 +2242,7 @@ NSString* FindLetter(int nCode)
 		case 8480:
 		case 8636:
 		case 8781:
-			strValue= @"QU";
+			strValue = @"QU";
 			break;
 		case 5825:
 		case 6085:
@@ -2264,32 +2254,32 @@ NSString* FindLetter(int nCode)
 		case 8273:
 		case 8360:
 		case 8760:
-			strValue= @"QUAN";
+			strValue = @"QUAN";
 			break;
 		case 6755:
 		case 6758:
 		case 7708:
-			strValue= @"QUE";
+			strValue = @"QUE";
 			break;
 		case 6950:
-			strValue= @"QUN";
+			strValue = @"QUN";
 			break;
 		case 6059:
 		case 8237:
 		case 8755:
-			strValue= @"RAN";
+			strValue = @"RAN";
 			break;
 		case 7692:
 		case 8006:
-			strValue= @"RANG";
+			strValue = @"RANG";
 			break;
 		case 6073:
 		case 7012:
 		case 7267:
-			strValue= @"RAO";
+			strValue = @"RAO";
 			break;
-			strValue= @"RE";
-			break;
+//			strValue = @"RE";
+//			break;
 		case 5680:
 		case 6083:
 		case 6156:
@@ -2297,23 +2287,23 @@ NSString* FindLetter(int nCode)
 		case 7377:
 		case 7994:
 		case 8137:
-			strValue= @"REN";
+			strValue = @"REN";
 			break;
-			strValue= @"RENG";
-			break;
-			strValue= @"RI";
-			break;
+//			strValue = @"RENG";
+//			break;
+//			strValue = @"RI";
+//			break;
 		case 6541:
 		case 6585:
 		case 7337:
 		case 7532:
 		case 8278:
-			strValue= @"RONG";
+			strValue = @"RONG";
 			break;
 		case 8459:
 		case 8569:
 		case 8723:
-			strValue= @"ROU";
+			strValue = @"ROU";
 			break;
 		case 6174:
 		case 6224:
@@ -2325,43 +2315,43 @@ NSString* FindLetter(int nCode)
 		case 7908:
 		case 8164:
 		case 8212:
-			strValue= @"RU";
+			strValue = @"RU";
 			break;
 		case 7535:
-			strValue= @"RUAN";
+			strValue = @"RUAN";
 			break;
 		case 6039:
 		case 6208:
 		case 7236:
 		case 7803:
 		case 8224:
-			strValue= @"RUI";
+			strValue = @"RUI";
 			break;
-			strValue= @"RUN";
-			break;
+//			strValue = @"RUN";
+//			break;
 		case 5728:
 		case 8372:
-			strValue= @"RUO";
+			strValue = @"RUO";
 			break;
 		case 5606:
 		case 5677:
 		case 7493:
 		case 7559:
 		case 7610:
-			strValue= @"SA";
+			strValue = @"SA";
 			break;
 		case 6471:
-			strValue= @"SAI";
+			strValue = @"SAI";
 			break;
 		case 6644:
 		case 7507:
 		case 8454:
-			strValue= @"SAN";
+			strValue = @"SAN";
 			break;
 		case 6290:
 		case 7763:
 		case 8210:
-			strValue= @"SANG";
+			strValue = @"SANG";
 			break;
 		case 6003:
 		case 7150:
@@ -2369,14 +2359,14 @@ NSString* FindLetter(int nCode)
 		case 7593:
 		case 8094:
 		case 8694:
-			strValue= @"SAO";
+			strValue = @"SAO";
 			break;
-			strValue= @"SE";
-			break;
-			strValue= @"SEN";
-			break;
-			strValue= @"SENG";
-			break;
+//			strValue = @"SE";
+//			break;
+//			strValue = @"SEN";
+//			break;
+//			strValue = @"SENG";
+//			break;
 		case 6394:
 		case 7606:
 		case 7901:
@@ -2384,10 +2374,10 @@ NSString* FindLetter(int nCode)
 		case 8436:
 		case 8614:
 		case 8672:
-			strValue= @"SHA";
+			strValue = @"SHA";
 			break;
 		case 8507:
-			strValue= @"SHAI";
+			strValue = @"SHAI";
 			break;
 		case 5663:
 		case 5808:
@@ -2405,14 +2395,14 @@ NSString* FindLetter(int nCode)
 		case 8414:
 		case 8539:
 		case 8713:
-			strValue= @"SHAN";
+			strValue = @"SHAN";
 			break;
 		case 5980:
 		case 7120:
 		case 7368:
 		case 7656:
 		case 8592:
-			strValue= @"SHANG";
+			strValue = @"SHANG";
 			break;
 		case 5931:
 		case 6070:
@@ -2420,7 +2410,7 @@ NSString* FindLetter(int nCode)
 		case 7228:
 		case 8366:
 		case 8425:
-			strValue= @"SHAO";
+			strValue = @"SHAO";
 			break;
 		case 5639:
 		case 5760:
@@ -2429,7 +2419,7 @@ NSString* FindLetter(int nCode)
 		case 7608:
 		case 7820:
 		case 8774:
-			strValue= @"SHE";
+			strValue = @"SHE";
 			break;
 		case 5837:
 		case 6123:
@@ -2439,13 +2429,13 @@ NSString* FindLetter(int nCode)
 		case 7547:
 		case 7982:
 		case 8255:
-			strValue= @"SHEN";
+			strValue = @"SHEN";
 			break;
 		case 6551:
 		case 7441:
 		case 7782:
 		case 8347:
-			strValue= @"SHENG";
+			strValue = @"SHENG";
 			break;
 		case 5854:
 		case 5985:
@@ -2462,12 +2452,12 @@ NSString* FindLetter(int nCode)
 		case 8525:
 		case 8669:
 		case 8685:
-			strValue= @"SHI";
+			strValue = @"SHI";
 			break;
 		case 6587:
 		case 7123:
 		case 8428:
-			strValue= @"SHOU";
+			strValue = @"SHOU";
 			break;
 		case 5731:
 		case 5951:
@@ -2479,31 +2469,31 @@ NSString* FindLetter(int nCode)
 		case 7508:
 		case 7582:
 		case 7988:
-			strValue= @"SHU";
+			strValue = @"SHU";
 			break;
 		case 6407:
-			strValue= @"SHUA";
+			strValue = @"SHUA";
 			break;
 		case 8316:
-			strValue= @"SHUAI";
+			strValue = @"SHUAI";
 			break;
 		case 6737:
 		case 6844:
-			strValue= @"SHUAN";
+			strValue = @"SHUAN";
 			break;
 		case 7055:
-			strValue= @"SHUANG";
+			strValue = @"SHUANG";
 			break;
-			strValue= @"SHUI";
-			break;
-			strValue= @"SHUN";
-			break;
+//			strValue = @"SHUI";
+//			break;
+//			strValue = @"SHUN";
+//			break;
 		case 6184:
 		case 6287:
 		case 6989:
 		case 7335:
 		case 7869:
-			strValue= @"SHUO";
+			strValue = @"SHUO";
 			break;
 		case 5643:
 		case 5778:
@@ -2521,7 +2511,7 @@ NSString* FindLetter(int nCode)
 		case 8174:
 		case 8247:
 		case 8351:
-			strValue= @"SI";
+			strValue = @"SI";
 			break;
 		case 5801:
 		case 6131:
@@ -2531,7 +2521,7 @@ NSString* FindLetter(int nCode)
 		case 6704:
 		case 6833:
 		case 8121:
-			strValue= @"SONG";
+			strValue = @"SONG";
 			break;
 		case 5937:
 		case 6220:
@@ -2543,7 +2533,7 @@ NSString* FindLetter(int nCode)
 		case 7804:
 		case 7943:
 		case 8284:
-			strValue= @"SOU";
+			strValue = @"SOU";
 			break;
 		case 5777:
 		case 5853:
@@ -2554,10 +2544,10 @@ NSString* FindLetter(int nCode)
 		case 8389:
 		case 8602:
 		case 8653:
-			strValue= @"SU";
+			strValue = @"SU";
 			break;
 		case 6601:
-			strValue= @"SUAN";
+			strValue = @"SUAN";
 			break;
 		case 5839:
 		case 6120:
@@ -2566,14 +2556,14 @@ NSString* FindLetter(int nCode)
 		case 7661:
 		case 7785:
 		case 7801:
-			strValue= @"SUI";
+			strValue = @"SUI";
 			break;
 		case 6105:
 		case 6588:
 		case 6624:
 		case 7330:
 		case 8632:
-			strValue= @"SUN";
+			strValue = @"SUN";
 			break;
 		case 6379:
 		case 6434:
@@ -2582,7 +2572,7 @@ NSString* FindLetter(int nCode)
 		case 7288:
 		case 7792:
 		case 8440:
-			strValue= @"SUO";
+			strValue = @"SUO";
 			break;
 		case 6743:
 		case 6866:
@@ -2592,7 +2582,7 @@ NSString* FindLetter(int nCode)
 		case 7872:
 		case 8533:
 		case 8703:
-			strValue= @"TA";
+			strValue = @"TA";
 			break;
 		case 5902:
 		case 6223:
@@ -2603,7 +2593,7 @@ NSString* FindLetter(int nCode)
 		case 7849:
 		case 8544:
 		case 8656:
-			strValue= @"TAI";
+			strValue = @"TAI";
 			break;
 		case 5916:
 		case 6903:
@@ -2612,7 +2602,7 @@ NSString* FindLetter(int nCode)
 		case 7867:
 		case 7936:
 		case 8191:
-			strValue= @"TAN";
+			strValue = @"TAN";
 			break;
 		case 5746:
 		case 6491:
@@ -2626,24 +2616,24 @@ NSString* FindLetter(int nCode)
 		case 8311:
 		case 8442:
 		case 8517:
-			strValue= @"TANG";
+			strValue = @"TANG";
 			break;
 		case 5627:
 		case 6391:
 		case 6812:
 		case 7226:
 		case 7666:
-			strValue= @"TAO";
+			strValue = @"TAO";
 			break;
-			strValue= @"1845 ≤Õ";
-			break;
+//			strValue = @"1845 ≤Õ";
+//			break;
 		case 6315:
 		case 7693:
 		case 7911:
-			strValue= @"TE";
+			strValue = @"TE";
 			break;
 		case 7588:
-			strValue= @"TENG";
+			strValue = @"TENG";
 			break;
 		case 5735:
 		case 6709:
@@ -2652,14 +2642,14 @@ NSString* FindLetter(int nCode)
 		case 8035:
 		case 8151:
 		case 8514:
-			strValue= @"TI";
+			strValue = @"TI";
 			break;
 		case 6261:
 		case 6735:
 		case 6757:
 		case 7369:
 		case 7817:
-			strValue= @"TIAN";
+			strValue = @"TIAN";
 			break;
 		case 5712:
 		case 7686:
@@ -2670,11 +2660,11 @@ NSString* FindLetter(int nCode)
 		case 8622:
 		case 8670:
 		case 8756:
-			strValue= @"TIAO";
+			strValue = @"TIAO";
 			break;
 		case 6138:
 		case 8749:
-			strValue= @"TIE";
+			strValue = @"TIE";
 			break;
 		case 6080:
 		case 6167:
@@ -2683,7 +2673,7 @@ NSString* FindLetter(int nCode)
 		case 7890:
 		case 8249:
 		case 8610:
-			strValue= @"TING";
+			strValue = @"TING";
 			break;
 		case 5701:
 		case 5758:
@@ -2692,32 +2682,32 @@ NSString* FindLetter(int nCode)
 		case 6690:
 		case 6892:
 		case 7737:
-			strValue= @"TONG";
+			strValue = @"TONG";
 			break;
 		case 7855:
 		case 7822:
 		case 8727:
-			strValue= @"TOU";
+			strValue = @"TOU";
 			break;
 		case 6002:
 		case 6117:
 		case 6143:
 		case 7842:
 		case 8509:
-			strValue= @"TU";
+			strValue = @"TU";
 			break;
 		case 6250:
 		case 6972:
-			strValue= @"TUAN";
+			strValue = @"TUAN";
 			break;
 		case 7653:
-			strValue= @"TUI";
+			strValue = @"TUI";
 			break;
 		case 5759:
 		case 6629:
 		case 7453:
 		case 7564:
-			strValue= @"TUN";
+			strValue = @"TUN";
 			break;
 		case 5617:
 		case 5702:
@@ -2732,15 +2722,15 @@ NSString* FindLetter(int nCode)
 		case 8502:
 		case 8541:
 		case 8630:
-			strValue= @"TUO";
+			strValue = @"TUO";
 			break;
 		case 5684:
 		case 7020:
 		case 7580:
-			strValue= @"WA";
+			strValue = @"WA";
 			break;
-			strValue= @"WAI";
-			break;
+//			strValue = @"WAI";
+//			break;
 		case 5664:
 		case 6025:
 		case 6150:
@@ -2750,14 +2740,14 @@ NSString* FindLetter(int nCode)
 		case 7568:
 		case 7821:
 		case 8274:
-			strValue= @"WAN";
+			strValue = @"WAN";
 			break;
 		case 5672:
 		case 6244:
 		case 6715:
 		case 7394:
 		case 8745:
-			strValue= @"WANG";
+			strValue = @"WANG";
 			break;
 		case 5743:
 		case 5835:
@@ -2785,18 +2775,18 @@ NSString* FindLetter(int nCode)
 		case 8084:
 		case 8426:
 		case 8659:
-			strValue= @"WEI";
+			strValue = @"WEI";
 			break;
 		case 5656:
 		case 6751:
 		case 6775:
 		case 7223:
 		case 8609:
-			strValue= @"WEN";
+			strValue = @"WEN";
 			break;
 		case 6178:
 		case 6219:
-			strValue= @"WENG";
+			strValue = @"WENG";
 			break;
 		case 5733:
 		case 6111:
@@ -2805,7 +2795,7 @@ NSString* FindLetter(int nCode)
 		case 7531:
 		case 7750:
 		case 8627:
-			strValue= @"WO";
+			strValue = @"WO";
 			break;
 		case 5603:
 		case 5685:
@@ -2832,7 +2822,7 @@ NSString* FindLetter(int nCode)
 		case 8258:
 		case 8640:
 		case 8789:
-			strValue= @"WU";
+			strValue = @"WU";
 			break;
 		case 5750:
 		case 5766:
@@ -2870,7 +2860,7 @@ NSString* FindLetter(int nCode)
 		case 8466:
 		case 8521:
 		case 8791:
-			strValue= @"XI";
+			strValue = @"XI";
 			break;
 		case 6340:
 		case 6582:
@@ -2881,7 +2871,7 @@ NSString* FindLetter(int nCode)
 		case 8093:
 		case 8333:
 		case 8779:
-			strValue= @"XIA";
+			strValue = @"XIA";
 			break;
 		case 5794:
 		case 5823:
@@ -2904,7 +2894,7 @@ NSString* FindLetter(int nCode)
 		case 8548:
 		case 8549:
 		case 8617:
-			strValue= @"XIAN";
+			strValue = @"XIAN";
 			break;
 		case 6028:
 		case 6157:
@@ -2915,7 +2905,7 @@ NSString* FindLetter(int nCode)
 		case 8313:
 		case 8663:
 		case 8747:
-			strValue= @"XIANG";
+			strValue = @"XIANG";
 			break;
 		case 6356:
 		case 6537:
@@ -2929,7 +2919,7 @@ NSString* FindLetter(int nCode)
 		case 8367:
 		case 8379:
 		case 8744:
-			strValue= @"XIAO";
+			strValue = @"XIAO";
 			break;
 		case 5741:
 		case 5784:
@@ -2947,24 +2937,24 @@ NSString* FindLetter(int nCode)
 		case 7331:
 		case 7339:
 		case 8583:
-			strValue= @"XIE";
+			strValue = @"XIE";
 			break;
 		case 5622:
 		case 6016:
 		case 7431:
 		case 7607:
 		case 8646:
-			strValue= @"XIN";
+			strValue = @"XIN";
 			break;
 		case 5874:
 		case 6084:
 		case 6309:
 		case 6712:
 		case 7742:
-			strValue= @"XING";
+			strValue = @"XING";
 			break;
 		case 6026:
-			strValue= @"XIONG";
+			strValue = @"XIONG";
 			break;
 		case 6361:
 		case 6522:
@@ -2974,7 +2964,7 @@ NSString* FindLetter(int nCode)
 		case 8028:
 		case 8587:
 		case 8759:
-			strValue= @"XIU";
+			strValue = @"XIU";
 			break;
 		case 5828:
 		case 5935:
@@ -2989,7 +2979,7 @@ NSString* FindLetter(int nCode)
 		case 8167:
 		case 8458:
 		case 8515:
-			strValue= @"XU";
+			strValue = @"XU";
 			break;
 		case 5756:
 		case 5846:
@@ -3007,13 +2997,13 @@ NSString* FindLetter(int nCode)
 		case 7871:
 		case 7964:
 		case 8071:
-			strValue= @"XUAN";
+			strValue = @"XUAN";
 			break;
 		case 5842:
 		case 7720:
 		case 8529:
 		case 8708:
-			strValue= @"XUE";
+			strValue = @"XUE";
 			break;
 		case 5767:
 		case 5908:
@@ -3032,7 +3022,7 @@ NSString* FindLetter(int nCode)
 		case 8131:
 		case 8524:
 		case 8664:
-			strValue= @"XUN";
+			strValue = @"XUN";
 			break;
 		case 5683:
 		case 5975:
@@ -3046,7 +3036,7 @@ NSString* FindLetter(int nCode)
 		case 7728:
 		case 7793:
 		case 8073:
-			strValue= @"YA";
+			strValue = @"YA";
 			break;
 		case 5641:
 		case 5645:
@@ -3077,7 +3067,7 @@ NSString* FindLetter(int nCode)
 		case 8742:
 		case 8748:
 		case 8790:
-			strValue= @"YAN";
+			strValue = @"YAN";
 			break;
 		case 6564:
 		case 6683:
@@ -3086,7 +3076,7 @@ NSString* FindLetter(int nCode)
 		case 7706:
 		case 8253:
 		case 8717:
-			strValue= @"YANG";
+			strValue = @"YANG";
 			break;
 		case 5618:
 		case 5619:
@@ -3104,7 +3094,7 @@ NSString* FindLetter(int nCode)
 		case 8126:
 		case 8477:
 		case 8705:
-			strValue= @"YAO";
+			strValue = @"YAO";
 			break;
 		case 5644:
 		case 5843:
@@ -3113,7 +3103,7 @@ NSString* FindLetter(int nCode)
 		case 7442:
 		case 7639:
 		case 7884:
-			strValue= @"YE";
+			strValue = @"YE";
 			break;
 		case 5655:
 		case 5657:
@@ -3166,7 +3156,7 @@ NSString* FindLetter(int nCode)
 		case 8472:
 		case 8493:
 		case 8780:
-			strValue= @"YI";
+			strValue = @"YI";
 			break;
 		case 5623:
 		case 5920:
@@ -3184,7 +3174,7 @@ NSString* FindLetter(int nCode)
 		case 8230:
 		case 8615:
 		case 8624:
-			strValue= @"YIN";
+			strValue = @"YIN";
 			break;
 		case 5788:
 		case 5911:
@@ -3207,10 +3197,10 @@ NSString* FindLetter(int nCode)
 		case 8108:
 		case 8203:
 		case 8331:
-			strValue= @"YING";
+			strValue = @"YING";
 			break;
 		case 6401:
-			strValue= @"YO";
+			strValue = @"YO";
 			break;
 		case 5724:
 		case 5953:
@@ -3222,7 +3212,7 @@ NSString* FindLetter(int nCode)
 		case 8014:
 		case 8711:
 		case 8751:
-			strValue= @"YONG";
+			strValue = @"YONG";
 			break;
 		case 5653:
 		case 5692:
@@ -3244,7 +3234,7 @@ NSString* FindLetter(int nCode)
 		case 8647:
 		case 8778:
 		case 8788:
-			strValue= @"YOU";
+			strValue = @"YOU";
 			break;
 		case 5614:
 		case 5625:
@@ -3290,7 +3280,7 @@ NSString* FindLetter(int nCode)
 		case 8408:
 		case 8607:
 		case 8625:
-			strValue= @"YU";
+			strValue = @"YU";
 			break;
 		case 5989:
 		case 6011:
@@ -3305,14 +3295,14 @@ NSString* FindLetter(int nCode)
 		case 8302:
 		case 8378:
 		case 8629:
-			strValue= @"YUAN";
+			strValue = @"YUAN";
 			break;
 		case 5763:
 		case 6914:
 		case 7348:
 		case 7530:
 		case 7865:
-			strValue= @"YUE";
+			strValue = @"YUE";
 			break;
 		case 5909:
 		case 6031:
@@ -3325,15 +3315,15 @@ NSString* FindLetter(int nCode)
 		case 7432:
 		case 7521:
 		case 7657:
-			strValue= @"YUN";
+			strValue = @"YUN";
 			break;
 		case 6257:
 		case 6338:
-			strValue= @"ZA";
+			strValue = @"ZA";
 			break;
 		case 6544:
 		case 7162:
-			strValue= @"ZAI";
+			strValue = @"ZAI";
 			break;
 		case 7222:
 		case 7435:
@@ -3341,15 +3331,15 @@ NSString* FindLetter(int nCode)
 		case 8456:
 		case 8485:
 		case 8641:
-			strValue= @"ZAN";
+			strValue = @"ZAN";
 			break;
 		case 6242:
 		case 7064:
 		case 7416:
-			strValue= @"ZANG";
+			strValue = @"ZANG";
 			break;
 		case 6380:
-			strValue= @"ZAO";
+			strValue = @"ZAO";
 			break;
 		case 5638:
 		case 8369:
@@ -3360,18 +3350,18 @@ NSString* FindLetter(int nCode)
 		case 7430:
 		case 8348:
 		case 8423:
-			strValue= @"ZE";
+			strValue = @"ZE";
 			break;
-			strValue= @"ZEI";
-			break;
+//			strValue = @"ZEI";
+//			break;
 		case 5858:
-			strValue= @"ZEN";
+			strValue = @"ZEN";
 			break;
 		case 7153:
 		case 7421:
 		case 7832:
 		case 7913:
-			strValue= @"ZENG";
+			strValue = @"ZENG";
 			break;
 		case 6610:
 		case 6274:
@@ -3382,16 +3372,16 @@ NSString* FindLetter(int nCode)
 		case 8068:
 		case 8238:
 		case 8794:
-			strValue= @"ZHA";
+			strValue = @"ZHA";
 			break;
 		case 7746:
 		case 8109:
-			strValue= @"ZHAI";
+			strValue = @"ZHAI";
 			break;
 		case 5862:
 		case 6288:
 		case 7625:
-			strValue= @"ZHAN";
+			strValue = @"ZHAN";
 			break;
 		case 5675:
 		case 5921:
@@ -3401,13 +3391,13 @@ NSString* FindLetter(int nCode)
 		case 7049:
 		case 7216:
 		case 8315:
-			strValue= @"ZHANG";
+			strValue = @"ZHANG";
 			break;
 		case 5815:
 		case 7294:
 		case 7840:
 		case 8341:
-			strValue= @"ZHAO";
+			strValue = @"ZHAO";
 			break;
 		case 5856:
 		case 6301:
@@ -3418,7 +3408,7 @@ NSString* FindLetter(int nCode)
 		case 8162:
 		case 8256:
 		case 8487:
-			strValue= @"ZHE";
+			strValue = @"ZHE";
 			break;
 		case 5958:
 		case 6172:
@@ -3435,7 +3425,7 @@ NSString* FindLetter(int nCode)
 		case 8001:
 		case 8018:
 		case 8380:
-			strValue= @"ZHEN";
+			strValue = @"ZHEN";
 			break;
 		case 5826:
 		case 6531:
@@ -3443,7 +3433,7 @@ NSString* FindLetter(int nCode)
 		case 7859:
 		case 7903:
 		case 8361:
-			strValue= @"ZHENG";
+			strValue = @"ZHENG";
 			break;
 		case 5620:
 		case 5876:
@@ -3479,14 +3469,14 @@ NSString* FindLetter(int nCode)
 		case 8560:
 		case 8584:
 		case 8603:
-			strValue= @"ZHI";
+			strValue = @"ZHI";
 			break;
 		case 5803:
 		case 7981:
 		case 8314:
 		case 8417:
 		case 8564:
-			strValue= @"ZHONG";
+			strValue = @"ZHONG";
 			break;
 		case 6107:
 		case 6390:
@@ -3497,7 +3487,7 @@ NSString* FindLetter(int nCode)
 		case 7756:
 		case 8406:
 		case 8492:
-			strValue= @"ZHOU";
+			strValue = @"ZHOU";
 			break;
 		case 5689:
 		case 5710:
@@ -3520,28 +3510,28 @@ NSString* FindLetter(int nCode)
 		case 8467:
 		case 8578:
 		case 8770:
-			strValue= @"ZHU";
+			strValue = @"ZHU";
 			break;
-			strValue= @"ZHUA";
-			break;
-			strValue= @"ZHUAI";
-			break;
+//			strValue = @"ZHUA";
+//			break;
+//			strValue = @"ZHUAI";
+//			break;
 		case 6389:
 		case 6645:
 		case 8207:
-			strValue= @"ZHUAN";
+			strValue = @"ZHUAN";
 			break;
 		case 5755:
-			strValue= @"ZHUANG";
+			strValue = @"ZHUANG";
 			break;
 		case 6723:
 		case 7077:
 		case 7136:
-			strValue= @"ZHUI";
+			strValue = @"ZHUI";
 			break;
 		case 7538:
 		case 8124:
-			strValue= @"ZHUN";
+			strValue = @"ZHUN";
 			break;
 		case 5730:
 		case 5834:
@@ -3553,7 +3543,7 @@ NSString* FindLetter(int nCode)
 		case 7690:
 		case 7729:
 		case 7977:
-			strValue= @"ZHUO";
+			strValue = @"ZHUO";
 			break;
 		case 5849:
 		case 6549:
@@ -3576,37 +3566,37 @@ NSString* FindLetter(int nCode)
 		case 8623:
 		case 8686:
 		case 8758:
-			strValue= @"ZI";
+			strValue = @"ZI";
 			break;
 		case 5744:
 		case 7574:
 		case 8453:
-			strValue= @"ZONG";
+			strValue = @"ZONG";
 			break;
 		case 5833:
 		case 5878:
 		case 5924:
 		case 7067:
 		case 8677:
-			strValue= @"ZOU";
+			strValue = @"ZOU";
 			break;
 		case 5762:
 		case 6147:
 		case 7963:
-			strValue= @"ZU";
+			strValue = @"ZU";
 			break;
 		case 6312:
 		case 7158:
 		case 8582:
-			strValue= @"ZUAN";
+			strValue = @"ZUAN";
 			break;
 		case 6209:
-			strValue= @"ZUI";
+			strValue = @"ZUI";
 			break;
 		case 6304:
 		case 7355:
 		case 8714:
-			strValue= @"ZUN";
+			strValue = @"ZUN";
 			break;
 		case 5872:
 		case 6382:
@@ -3614,1978 +3604,1978 @@ NSString* FindLetter(int nCode)
 		case 6684:
 		case 7549:
 		case 7681:
-			strValue= @"ZUO";
+			strValue = @"ZUO";
 			break;
 		default:
-			if(nCode>=1601 && nCode<=1602)
+			if(nCode >= 1601 && nCode <= 1602)
 			{
-				strValue= @"A";
+				strValue = @"A";
 				break;
 			}
-			if(nCode>=1603 && nCode<=1615)
+			if(nCode >= 1603 && nCode <= 1615)
 			{
-				strValue= @"AI";
+				strValue = @"AI";
 				break;
 			}
-			if(nCode>=1616 && nCode<=1624)
+			if(nCode >= 1616 && nCode <= 1624)
 			{
-				strValue= @"AN";
+				strValue = @"AN";
 				break;
 			}
-			if(nCode>=1625 && nCode<=1627)
+			if(nCode >= 1625 && nCode <= 1627)
 			{
-				strValue= @"ANG";
+				strValue = @"ANG";
 				break;
 			}
-			if(nCode>=1628 && nCode<=1636)
+			if(nCode >= 1628 && nCode <= 1636)
 			{
-				strValue= @"AO";
+				strValue = @"AO";
 				break;
 			}
-			if(nCode>=1637 && nCode<=1654)
+			if(nCode >= 1637 && nCode <= 1654)
 			{
-				strValue= @"BA";
+				strValue = @"BA";
 				break;
 			}
-			if(nCode>=1655 && nCode<=1662)
+			if(nCode >= 1655 && nCode <= 1662)
 			{
-				strValue= @"BAI";
+				strValue = @"BAI";
 				break;
 			}
-			if(nCode>=1663 && nCode<=1677)
+			if(nCode >= 1663 && nCode <= 1677)
 			{
-				strValue= @"BAN";
+				strValue = @"BAN";
 				break;
 			}
-			if(nCode>=1678 && nCode<=1689)
+			if(nCode >= 1678 && nCode <= 1689)
 			{
-				strValue= @"BANG";
+				strValue = @"BANG";
 				break;
 			}
-			if(nCode>=1690 && nCode<=1712)
+			if(nCode >= 1690 && nCode <= 1712)
 			{
-				strValue= @"BAO";
+				strValue = @"BAO";
 				break;
 			}
-			if(nCode>=1713 && nCode<=1727)
+			if(nCode >= 1713 && nCode <= 1727)
 			{
-				strValue= @"BEI";
+				strValue = @"BEI";
 				break;
 			}
-			if(nCode>=1728 && nCode<=1731)
+			if(nCode >= 1728 && nCode <= 1731)
 			{
-				strValue= @"BEN";
+				strValue = @"BEN";
 				break;
 			}
-			if(nCode>=1732 && nCode<=1737)
+			if(nCode >= 1732 && nCode <= 1737)
 			{
-				strValue= @"BENG";
+				strValue = @"BENG";
 				break;
 			}
-			if(nCode>1738 && nCode<=1761)
+			if(nCode>1738 && nCode <= 1761)
 			{
-				strValue= @"BI";
+				strValue = @"BI";
 				break;
 			}
-			if(nCode>=1762 && nCode<=1773)
+			if(nCode >= 1762 && nCode <= 1773)
 			{
-				strValue= @"BIAN";
+				strValue = @"BIAN";
 				break;
 			}
-			if(nCode>=1774 && nCode<=1777)
+			if(nCode >= 1774 && nCode <= 1777)
 			{
-				strValue= @"BIAO";
+				strValue = @"BIAO";
 				break;
 			}
-			if(nCode>=1778 && nCode<=1781)
+			if(nCode >= 1778 && nCode <= 1781)
 			{
-				strValue= @"BIE";
+				strValue = @"BIE";
 				break;
 			}
-			if(nCode>=1782 && nCode<=1787)
+			if(nCode >= 1782 && nCode <= 1787)
 			{
-				strValue= @"BIN";
+				strValue = @"BIN";
 				break;
 			}
-			if(nCode>=1788 && nCode<=1794)
+			if(nCode >= 1788 && nCode <= 1794)
 			{
-				strValue= @"BING";
+				strValue = @"BING";
 				break;
 			}
-			if(nCode>=1801 && nCode<=1802)
+			if(nCode >= 1801 && nCode <= 1802)
 			{
-				strValue= @"BING";
+				strValue = @"BING";
 				break;
 			}
-			if(nCode>=1803 && nCode<=1821)
+			if(nCode >= 1803 && nCode <= 1821)
 			{
-				strValue= @"BO";
+				strValue = @"BO";
 				break;
 			}
-			if(nCode>=1822 && nCode<=1832)
+			if(nCode >= 1822 && nCode <= 1832)
 			{
-				strValue= @"BU";
+				strValue = @"BU";
 				break;
 			}
 			if(nCode==1833)
 			{
-				strValue= @"CA";
+				strValue = @"CA";
 				break;
 			}
-			if(nCode>=1834 && nCode<=1844)
+			if(nCode >= 1834 && nCode <= 1844)
 			{
-				strValue= @"CAI";
+				strValue = @"CAI";
 				break;
 			}
-			if(nCode>=1845 && nCode<=1851)
+			if(nCode >= 1845 && nCode <= 1851)
 			{
-				strValue= @"CAN";
+				strValue = @"CAN";
 				break;
 			}
-			if(nCode>=1852 && nCode<=1856)
+			if(nCode >= 1852 && nCode <= 1856)
 			{
-				strValue= @"CANG";
+				strValue = @"CANG";
 				break;
 			}
-			if(nCode>=1857 && nCode<=1861)
+			if(nCode >= 1857 && nCode <= 1861)
 			{
-				strValue= @"CAO";
+				strValue = @"CAO";
 				break;
 			}
-			if(nCode>=1862 && nCode<=1866)
+			if(nCode >= 1862 && nCode <= 1866)
 			{
-				strValue= @"CE";
+				strValue = @"CE";
 				break;
 			}
-			if(nCode>=1867 && nCode<=1868)
+			if(nCode >= 1867 && nCode <= 1868)
 			{
-				strValue= @"CENG";
+				strValue = @"CENG";
 				break;
 			}
-			if(nCode>=1869 && nCode<=1879)
+			if(nCode >= 1869 && nCode <= 1879)
 			{
-				strValue= @"CHA";
+				strValue = @"CHA";
 				break;
 			}
-			if(nCode>=1880 && nCode<=1882)
+			if(nCode >= 1880 && nCode <= 1882)
 			{
-				strValue= @"CHAI";
+				strValue = @"CHAI";
 				break;
 			}
-			if(nCode>=1883 && nCode<=1892)
+			if(nCode >= 1883 && nCode <= 1892)
 			{
-				strValue= @"CHAN";
+				strValue = @"CHAN";
 				break;
 			}
-			if(nCode>=1893 && nCode<=1911)
+			if(nCode >= 1893 && nCode <= 1911)
 			{
-				strValue= @"CHANG";
+				strValue = @"CHANG";
 				break;
 			}
-			if(nCode>=1912 && nCode<=1920)
+			if(nCode >= 1912 && nCode <= 1920)
 			{
-				strValue= @"CHAO";
+				strValue = @"CHAO";
 				break;
 			}
-			if(nCode>=1921 && nCode<=1926)
+			if(nCode >= 1921 && nCode <= 1926)
 			{
-				strValue= @"CHE";
+				strValue = @"CHE";
 				break;
 			}
-			if(nCode>=1927 && nCode<=1936)
+			if(nCode >= 1927 && nCode <= 1936)
 			{
-				strValue= @"CHEN";
+				strValue = @"CHEN";
 				break;
 			}
-			if(nCode>=1937 && nCode<=1951)
+			if(nCode >= 1937 && nCode <= 1951)
 			{
-				strValue= @"CHENG";
+				strValue = @"CHENG";
 				break;
 			}
-			if(nCode>=1952 && nCode<=1967)
+			if(nCode >= 1952 && nCode <= 1967)
 			{
-				strValue= @"CHI";
+				strValue = @"CHI";
 				break;
 			}
-			if(nCode>=1968 && nCode<=1972)
+			if(nCode >= 1968 && nCode <= 1972)
 			{
-				strValue= @"CHONG";
+				strValue = @"CHONG";
 				break;
 			}
-			if(nCode>=1973 && nCode<=1984)
+			if(nCode >= 1973 && nCode <= 1984)
 			{
-				strValue= @"CHOU";
+				strValue = @"CHOU";
 				break;
 			}
-			if(nCode>=1985 && nCode<=2006)
+			if(nCode >= 1985 && nCode <= 2006)
 			{
-				strValue= @"CHU";
+				strValue = @"CHU";
 				break;
 			}
 			if(nCode==2007)
 			{
-				strValue= @"CHUAI";
+				strValue = @"CHUAI";
 				break;
 			}
-			if(nCode>=2008 && nCode<=2014)
+			if(nCode >= 2008 && nCode <= 2014)
 			{
-				strValue= @"CHUAN";
+				strValue = @"CHUAN";
 				break;
 			}
-			if(nCode>=2015 && nCode<=2020)
+			if(nCode >= 2015 && nCode <= 2020)
 			{
-				strValue= @"CHUANG";
+				strValue = @"CHUANG";
 				break;
 			}
-			if(nCode>=2021 && nCode<=2025)
+			if(nCode >= 2021 && nCode <= 2025)
 			{
-				strValue= @"CHUI";
+				strValue = @"CHUI";
 				break;
 			}
-			if(nCode>=2026 && nCode<=2032)
+			if(nCode >= 2026 && nCode <= 2032)
 			{
-				strValue= @"CHUN";
+				strValue = @"CHUN";
 				break;
 			}
-			if(nCode>=2033 && nCode<=2034)
+			if(nCode >= 2033 && nCode <= 2034)
 			{
-				strValue= @"CHUO";
+				strValue = @"CHUO";
 				break;
 			}
-			if(nCode>=2035 && nCode<=2046)
+			if(nCode >= 2035 && nCode <= 2046)
 			{
-				strValue= @"CI";
+				strValue = @"CI";
 				break;
 			}
-			if(nCode>=2047 && nCode<=2052)
+			if(nCode >= 2047 && nCode <= 2052)
 			{
-				strValue= @"CONG";
+				strValue = @"CONG";
 				break;
 			}
-			if(nCode>=2054 && nCode<=2057)
+			if(nCode >= 2054 && nCode <= 2057)
 			{
-				strValue= @"CU";
+				strValue = @"CU";
 				break;
 			}
-			if(nCode>=2058 && nCode<=2060)
+			if(nCode >= 2058 && nCode <= 2060)
 			{
-				strValue= @"CUAN";
+				strValue = @"CUAN";
 				break;
 			}
-			if(nCode>=2061 && nCode<=2068)
+			if(nCode >= 2061 && nCode <= 2068)
 			{
-				strValue= @"CUI";
+				strValue = @"CUI";
 				break;
 			}
-			if(nCode>=2069 && nCode<=2071)
+			if(nCode >= 2069 && nCode <= 2071)
 			{
-				strValue= @"CUN";
+				strValue = @"CUN";
 				break;
 			}
-			if(nCode>=2072 && nCode<=2077)
+			if(nCode >= 2072 && nCode <= 2077)
 			{
-				strValue= @"CUO";
+				strValue = @"CUO";
 				break;
 			}
-			if(nCode>=2078 && nCode<=2083)
+			if(nCode >= 2078 && nCode <= 2083)
 			{
-				strValue= @"DA";
+				strValue = @"DA";
 				break;
 			}
-			if(nCode>=2084 && nCode<=2094)
+			if(nCode >= 2084 && nCode <= 2094)
 			{
-				strValue= @"DAI";
+				strValue = @"DAI";
 				break;
 			}
-			if(nCode>=2102 && nCode<=2116)
+			if(nCode >= 2102 && nCode <= 2116)
 			{
-				strValue= @"DAN";
+				strValue = @"DAN";
 				break;
 			}
-			if(nCode>=2117 && nCode<=2121)
+			if(nCode >= 2117 && nCode <= 2121)
 			{
-				strValue= @"DANG";
+				strValue = @"DANG";
 				break;
 			}
-			if(nCode>=2122 && nCode<=2133)
+			if(nCode >= 2122 && nCode <= 2133)
 			{
-				strValue= @"DAO";
+				strValue = @"DAO";
 				break;
 			}
-			if(nCode>=2134 && nCode<=2136)
+			if(nCode >= 2134 && nCode <= 2136)
 			{
-				strValue= @"DE";
+				strValue = @"DE";
 				break;
 			}
-			if(nCode>=2137 && nCode<=2143)
+			if(nCode >= 2137 && nCode <= 2143)
 			{
-				strValue= @"DENG";
+				strValue = @"DENG";
 				break;
 			}
-			if(nCode>=2144 && nCode<=2162)
+			if(nCode >= 2144 && nCode <= 2162)
 			{
-				strValue= @"DI";
+				strValue = @"DI";
 				break;
 			}
-			if(nCode>=2163 && nCode<=2178)
+			if(nCode >= 2163 && nCode <= 2178)
 			{
-				strValue= @"DIAN";
+				strValue = @"DIAN";
 				break;
 			}
-			if(nCode>=2179 && nCode<=2187)
+			if(nCode >= 2179 && nCode <= 2187)
 			{
-				strValue= @"DIAO";
+				strValue = @"DIAO";
 				break;
 			}
-			if(nCode>=2188 && nCode<=2194)
+			if(nCode >= 2188 && nCode <= 2194)
 			{
-				strValue= @"DIE";
+				strValue = @"DIE";
 				break;
 			}
-			if(nCode>=2201 && nCode<=2209)
+			if(nCode >= 2201 && nCode <= 2209)
 			{
-				strValue= @"DING";
+				strValue = @"DING";
 				break;
 			}
 			if(nCode==2210)
 			{
-				strValue= @"DIU";
+				strValue = @"DIU";
 				break;
 			}
-			if(nCode>=2211 && nCode<=2220)
+			if(nCode >= 2211 && nCode <= 2220)
 			{
-				strValue= @"DONG";
+				strValue = @"DONG";
 				break;
 			}
-			if(nCode>=2221 && nCode<=2227)
+			if(nCode >= 2221 && nCode <= 2227)
 			{
-				strValue= @"DOU";
+				strValue = @"DOU";
 				break;
 			}
-			if(nCode>=2228 && nCode<=2242)
+			if(nCode >= 2228 && nCode <= 2242)
 			{
-				strValue= @"DU";
+				strValue = @"DU";
 				break;
 			}
-			if(nCode>=2243 && nCode<=2248)
+			if(nCode >= 2243 && nCode <= 2248)
 			{
-				strValue= @"DUAN";
+				strValue = @"DUAN";
 				break;
 			}
-			if(nCode>=2249 && nCode<=2252)
+			if(nCode >= 2249 && nCode <= 2252)
 			{
-				strValue= @"DUI";
+				strValue = @"DUI";
 				break;
 			}
-			if(nCode>=2253 && nCode<=2261)
+			if(nCode >= 2253 && nCode <= 2261)
 			{
-				strValue= @"DUN";
+				strValue = @"DUN";
 				break;
 			}
-			if(nCode>=2262 && nCode<=2273)
+			if(nCode >= 2262 && nCode <= 2273)
 			{
-				strValue= @"DUO";
+				strValue = @"DUO";
 				break;
 			}
-			if(nCode>=2274 && nCode<=2286)
+			if(nCode >= 2274 && nCode <= 2286)
 			{
-				strValue= @"E";
+				strValue = @"E";
 				break;
 			}
 			if(nCode==2287)
 			{
-				strValue= @"EN";
+				strValue = @"EN";
 				break;
 			}
-			if(nCode>=2288 && nCode<=2231)
+			if(nCode >= 2288 && nCode <= 2231)
 			{
-				strValue= @"ER";
+				strValue = @"ER";
 				break;
 			}
-			if(nCode>=2302 && nCode<=2309)
+			if(nCode >= 2302 && nCode <= 2309)
 			{
-				strValue= @"FA";
+				strValue = @"FA";
 				break;
 			}
-			if(nCode>=2310 && nCode<=2326)
+			if(nCode >= 2310 && nCode <= 2326)
 			{
-				strValue= @"FAN";
+				strValue = @"FAN";
 				break;
 			}
-			if(nCode>=2327 && nCode<=2337)
+			if(nCode >= 2327 && nCode <= 2337)
 			{
-				strValue= @"FANG";
+				strValue = @"FANG";
 				break;
 			}
-			if(nCode>=2338 && nCode<=2349)
+			if(nCode >= 2338 && nCode <= 2349)
 			{
-				strValue= @"FEI";
+				strValue = @"FEI";
 				break;
 			}
-			if(nCode>=2350 && nCode<=2364)
+			if(nCode >= 2350 && nCode <= 2364)
 			{
-				strValue= @"FEN";
+				strValue = @"FEN";
 				break;
 			}
-			if(nCode>=2365 && nCode<=2379)
+			if(nCode >= 2365 && nCode <= 2379)
 			{
-				strValue= @"FENG";
+				strValue = @"FENG";
 				break;
 			}
 			if(nCode==2380)
 			{
-				strValue= @"FO";
+				strValue = @"FO";
 				break;
 			}
 			if(nCode==2381)
 			{
-				strValue= @"FOU";
+				strValue = @"FOU";
 				break;
 			}
-			if(nCode>=2382 && nCode<=2432)
+			if(nCode >= 2382 && nCode <= 2432)
 			{
-				strValue= @"FU";
+				strValue = @"FU";
 				break;
 			}
-			if(nCode>=2435 && nCode<=2440)
+			if(nCode >= 2435 && nCode <= 2440)
 			{
-				strValue= @"GAI";
+				strValue = @"GAI";
 				break;
 			}
-			if(nCode>=2441 && nCode<=2451)
+			if(nCode >= 2441 && nCode <= 2451)
 			{
-				strValue= @"GAN";
+				strValue = @"GAN";
 				break;
 			}
-			if(nCode>=2452 && nCode<=2460)
+			if(nCode >= 2452 && nCode <= 2460)
 			{
-				strValue= @"GANG";
+				strValue = @"GANG";
 				break;
 			}
-			if(nCode>=2461 && nCode<=2470)
+			if(nCode >= 2461 && nCode <= 2470)
 			{
-				strValue= @"GAO";
+				strValue = @"GAO";
 				break;
 			}
-			if(nCode>=2471 && nCode<=2487)
+			if(nCode >= 2471 && nCode <= 2487)
 			{
-				strValue= @"GE";
+				strValue = @"GE";
 				break;
 			}
 			if(nCode==2488)
 			{
-				strValue= @"GEI";
+				strValue = @"GEI";
 				break;
 			}
-			if(nCode>=2489 && nCode<=2490)
+			if(nCode >= 2489 && nCode <= 2490)
 			{
-				strValue= @"GEN";
+				strValue = @"GEN";
 				break;
 			}
-			if(nCode>=2491 && nCode<=2503)
+			if(nCode >= 2491 && nCode <= 2503)
 			{
-				strValue= @"GENG";
+				strValue = @"GENG";
 				break;
 			}
-			if(nCode>=2504 && nCode<=2518)
+			if(nCode >= 2504 && nCode <= 2518)
 			{
-				strValue= @"GONG";
+				strValue = @"GONG";
 				break;
 			}
-			if(nCode>=2519 && nCode<=2527)
+			if(nCode >= 2519 && nCode <= 2527)
 			{
-				strValue= @"GOU";
+				strValue = @"GOU";
 				break;
 			}
-			if(nCode>=2528 && nCode<=2545)
+			if(nCode >= 2528 && nCode <= 2545)
 			{
-				strValue= @"GU";
+				strValue = @"GU";
 				break;
 			}
-			if(nCode>=2546 && nCode<=2551)
+			if(nCode >= 2546 && nCode <= 2551)
 			{
-				strValue= @"GUA";
+				strValue = @"GUA";
 				break;
 			}
-			if(nCode>=2552 && nCode<=2554)
+			if(nCode >= 2552 && nCode <= 2554)
 			{
-				strValue= @"GUAI";
+				strValue = @"GUAI";
 				break;
 			}
-			if(nCode>=2555 && nCode<=2565)
+			if(nCode >= 2555 && nCode <= 2565)
 			{
-				strValue= @"GUAN";
+				strValue = @"GUAN";
 				break;
 			}
-			if(nCode>=2566 && nCode<=2568)
+			if(nCode >= 2566 && nCode <= 2568)
 			{
-				strValue= @"GUANG";
+				strValue = @"GUANG";
 				break;
 			}
-			if(nCode>=2569 && nCode<=2584)
+			if(nCode >= 2569 && nCode <= 2584)
 			{
-				strValue= @"GUI";
+				strValue = @"GUI";
 				break;
 			}
-			if(nCode>=2585 && nCode<=2587)
+			if(nCode >= 2585 && nCode <= 2587)
 			{
-				strValue= @"GUN";
+				strValue = @"GUN";
 				break;
 			}
-			if(nCode>=2588 && nCode<=2593)
+			if(nCode >= 2588 && nCode <= 2593)
 			{
-				strValue= @"GUO";
+				strValue = @"GUO";
 				break;
 			}
 			if(nCode==2594)
 			{
-				strValue= @"HA";
+				strValue = @"HA";
 				break;
 			}
-			if(nCode>=2601 && nCode<=2607)
+			if(nCode >= 2601 && nCode <= 2607)
 			{
-				strValue= @"HAI";
+				strValue = @"HAI";
 				break;
 			}
-			if(nCode>=2608 && nCode<=2626)
+			if(nCode >= 2608 && nCode <= 2626)
 			{
-				strValue= @"HAN";
+				strValue = @"HAN";
 				break;
 			}
-			if(nCode>=2627 && nCode<=2629)
+			if(nCode >= 2627 && nCode <= 2629)
 			{
-				strValue= @"HANG";
+				strValue = @"HANG";
 				break;
 			}
-			if(nCode>=2630 && nCode<=2638)
+			if(nCode >= 2630 && nCode <= 2638)
 			{
-				strValue= @"HAO";
+				strValue = @"HAO";
 				break;
 			}
-			if(nCode>=2639 && nCode<=2656)
+			if(nCode >= 2639 && nCode <= 2656)
 			{
-				strValue= @"HE";
+				strValue = @"HE";
 				break;
 			}
-			if(nCode>=2657 && nCode<=2658)
+			if(nCode >= 2657 && nCode <= 2658)
 			{
-				strValue= @"HEI";
+				strValue = @"HEI";
 				break;
 			}
-			if(nCode>=2659 && nCode<=2662)
+			if(nCode >= 2659 && nCode <= 2662)
 			{
-				strValue= @"HEN";
+				strValue = @"HEN";
 				break;
 			}
-			if(nCode>=2663 && nCode<=2667)
+			if(nCode >= 2663 && nCode <= 2667)
 			{
-				strValue= @"HENG";
+				strValue = @"HENG";
 				break;
 			}
-			if(nCode>=2668 && nCode<=2676)
+			if(nCode >= 2668 && nCode <= 2676)
 			{
-				strValue= @"HONG";
+				strValue = @"HONG";
 				break;
 			}
-			if(nCode>=2677 && nCode<=2683)
+			if(nCode >= 2677 && nCode <= 2683)
 			{
-				strValue= @"HOU";
+				strValue = @"HOU";
 				break;
 			}
-			if(nCode>=2684 && nCode<=2707)
+			if(nCode >= 2684 && nCode <= 2707)
 			{
-				strValue= @"HU";
+				strValue = @"HU";
 				break;
 			}
-			if(nCode>=2708 && nCode<=2716)
+			if(nCode >= 2708 && nCode <= 2716)
 			{
-				strValue= @"HUA";
+				strValue = @"HUA";
 				break;
 			}
-			if(nCode>=2717 && nCode<=2721)
+			if(nCode >= 2717 && nCode <= 2721)
 			{
-				strValue= @"HUAI";
+				strValue = @"HUAI";
 				break;
 			}
-			if(nCode>=2722 && nCode<=2735)
+			if(nCode >= 2722 && nCode <= 2735)
 			{
-				strValue= @"HUAN";
+				strValue = @"HUAN";
 				break;
 			}
-			if(nCode>=2736 && nCode<=2749)
+			if(nCode >= 2736 && nCode <= 2749)
 			{
-				strValue= @"HUANG";
+				strValue = @"HUANG";
 				break;
 			}
-			if(nCode>=2750 && nCode<=2770)
+			if(nCode >= 2750 && nCode <= 2770)
 			{
-				strValue= @"HUI";
+				strValue = @"HUI";
 				break;
 			}
-			if(nCode>=2771 && nCode<=2776)
+			if(nCode >= 2771 && nCode <= 2776)
 			{
-				strValue= @"HUN";
+				strValue = @"HUN";
 				break;
 			}
-			if(nCode>=2777 && nCode<=2786)
+			if(nCode >= 2777 && nCode <= 2786)
 			{
-				strValue= @"HUO";
+				strValue = @"HUO";
 				break;
 			}
-			if(nCode>=2787 && nCode<=2845)
+			if(nCode >= 2787 && nCode <= 2845)
 			{
-				strValue= @"JI";
+				strValue = @"JI";
 				break;
 			}
-			if(nCode>=2846 && nCode<=2862)
+			if(nCode >= 2846 && nCode <= 2862)
 			{
-				strValue= @"JIA";
+				strValue = @"JIA";
 				break;
 			}
-			if(nCode>=2863 && nCode<=2908)
+			if(nCode >= 2863 && nCode <= 2908)
 			{
-				strValue= @"JIAN";
+				strValue = @"JIAN";
 				break;
 			}
-			if(nCode>=2909 && nCode<=2921)
+			if(nCode >= 2909 && nCode <= 2921)
 			{
-				strValue= @"JIANG";
+				strValue = @"JIANG";
 				break;
 			}
-			if(nCode>=2922 && nCode<=2949)
+			if(nCode >= 2922 && nCode <= 2949)
 			{
-				strValue= @"JIAO";
+				strValue = @"JIAO";
 				break;
 			}
-			if(nCode>=2950 && nCode<=2976)
+			if(nCode >= 2950 && nCode <= 2976)
 			{
-				strValue= @"JIE";
+				strValue = @"JIE";
 				break;
 			}
-			if(nCode>=2977 && nCode<=3002)
+			if(nCode >= 2977 && nCode <= 3002)
 			{
-				strValue= @"JIN";
+				strValue = @"JIN";
 				break;
 			}
-			if(nCode>=3003 && nCode<=3027)
+			if(nCode >= 3003 && nCode <= 3027)
 			{
-				strValue= @"JING";
+				strValue = @"JING";
 				break;
 			}
-			if(nCode>=3028 && nCode<=3029)
+			if(nCode >= 3028 && nCode <= 3029)
 			{
-				strValue= @"JIONG";
+				strValue = @"JIONG";
 				break;
 			}
-			if(nCode>=3030 && nCode<=3046)
+			if(nCode >= 3030 && nCode <= 3046)
 			{
-				strValue= @"JIU";
+				strValue = @"JIU";
 				break;
 			}
-			if(nCode>=3047 && nCode<=3071)
+			if(nCode >= 3047 && nCode <= 3071)
 			{
-				strValue= @"JU";
+				strValue = @"JU";
 				break;
 			}
-			if(nCode>=3072 && nCode<=3078)
+			if(nCode >= 3072 && nCode <= 3078)
 			{
-				strValue= @"JUAN";
+				strValue = @"JUAN";
 				break;
 			}
-			if(nCode>=3079 && nCode<=3088)
+			if(nCode >= 3079 && nCode <= 3088)
 			{
-				strValue= @"JUE";
+				strValue = @"JUE";
 				break;
 			}
-			if(nCode>=3089 && nCode<=3105)
+			if(nCode >= 3089 && nCode <= 3105)
 			{
-				strValue= @"JUN";
+				strValue = @"JUN";
 				break;
 			}
-			if(nCode>=3106 && nCode<=3109)
+			if(nCode >= 3106 && nCode <= 3109)
 			{
-				strValue= @"KA";
+				strValue = @"KA";
 				break;
 			}
-			if(nCode>=3110 && nCode<=3114)
+			if(nCode >= 3110 && nCode <= 3114)
 			{
-				strValue= @"KAI";
+				strValue = @"KAI";
 				break;
 			}
-			if(nCode>=3115 && nCode<=3120)
+			if(nCode >= 3115 && nCode <= 3120)
 			{
-				strValue= @"KAN";
+				strValue = @"KAN";
 				break;
 			}
-			if(nCode>=3121 && nCode<=3127)
+			if(nCode >= 3121 && nCode <= 3127)
 			{
-				strValue= @"KANG";
+				strValue = @"KANG";
 				break;
 			}
-			if(nCode>=3128 && nCode<=3131)
+			if(nCode >= 3128 && nCode <= 3131)
 			{
-				strValue= @"KAO";
+				strValue = @"KAO";
 				break;
 			}
-			if(nCode>=3132 && nCode<=3146)
+			if(nCode >= 3132 && nCode <= 3146)
 			{
-				strValue= @"KE";
+				strValue = @"KE";
 				break;
 			}
-			if(nCode>=3147 && nCode<=3150)
+			if(nCode >= 3147 && nCode <= 3150)
 			{
-				strValue= @"KEN";
+				strValue = @"KEN";
 				break;
 			}
-			if(nCode>=3151 && nCode<=3152)
+			if(nCode >= 3151 && nCode <= 3152)
 			{
-				strValue= @"KENG";
+				strValue = @"KENG";
 				break;
 			}
-			if(nCode>=3153 && nCode<=3156)
+			if(nCode >= 3153 && nCode <= 3156)
 			{
-				strValue= @"KONG";
+				strValue = @"KONG";
 				break;
 			}
-			if(nCode>=3157 && nCode<=3160)
+			if(nCode >= 3157 && nCode <= 3160)
 			{
-				strValue= @"KOU";
+				strValue = @"KOU";
 				break;
 			}
-			if(nCode>=3161 && nCode<=3167)
+			if(nCode >= 3161 && nCode <= 3167)
 			{
-				strValue= @"KU";
+				strValue = @"KU";
 				break;
 			}
-			if(nCode>=3168 && nCode<=3172)
+			if(nCode >= 3168 && nCode <= 3172)
 			{
-				strValue= @"KUA";
+				strValue = @"KUA";
 				break;
 			}
-			if(nCode>=3173 && nCode<=3176)
+			if(nCode >= 3173 && nCode <= 3176)
 			{
-				strValue= @"KUAI";
+				strValue = @"KUAI";
 				break;
 			}
-			if(nCode>=3177 && nCode<=3178)
+			if(nCode >= 3177 && nCode <= 3178)
 			{
-				strValue= @"KUAN";
+				strValue = @"KUAN";
 				break;
 			}
-			if(nCode>=3179 && nCode<=3186)
+			if(nCode >= 3179 && nCode <= 3186)
 			{
-				strValue= @"KUANG";
+				strValue = @"KUANG";
 				break;
 			}
-			if(nCode>=3187 && nCode<=3203)
+			if(nCode >= 3187 && nCode <= 3203)
 			{
-				strValue= @"KUI";
+				strValue = @"KUI";
 				break;
 			}
-			if(nCode>=3204 && nCode<=3207)
+			if(nCode >= 3204 && nCode <= 3207)
 			{
-				strValue= @"KUN";
+				strValue = @"KUN";
 				break;
 			}
-			if(nCode>=3208 && nCode<=3211)
+			if(nCode >= 3208 && nCode <= 3211)
 			{
-				strValue= @"KUO";
+				strValue = @"KUO";
 				break;
 			}
-			if(nCode>=3212 && nCode<=3218)
+			if(nCode >= 3212 && nCode <= 3218)
 			{
-				strValue= @"LA";
+				strValue = @"LA";
 				break;
 			}
-			if(nCode>=3219 && nCode<=3221)
+			if(nCode >= 3219 && nCode <= 3221)
 			{
-				strValue= @"LAI";
+				strValue = @"LAI";
 				break;
 			}
-			if(nCode>=3222 && nCode<=3236)
+			if(nCode >= 3222 && nCode <= 3236)
 			{
-				strValue= @"LAN";
+				strValue = @"LAN";
 				break;
 			}
-			if(nCode>=3237 && nCode<=3243)
+			if(nCode >= 3237 && nCode <= 3243)
 			{
-				strValue= @"LANG";
+				strValue = @"LANG";
 				break;
 			}
-			if(nCode>=3244 && nCode<=3252)
+			if(nCode >= 3244 && nCode <= 3252)
 			{
-				strValue= @"LAO";
+				strValue = @"LAO";
 				break;
 			}
-			if(nCode>=3253 && nCode<=3254)
+			if(nCode >= 3253 && nCode <= 3254)
 			{
-				strValue= @"LE";
+				strValue = @"LE";
 				break;
 			}
-			if(nCode>=3255 && nCode<=3265)
+			if(nCode >= 3255 && nCode <= 3265)
 			{
-				strValue= @"LEI";
+				strValue = @"LEI";
 				break;
 			}
-			if(nCode>=3266 && nCode<=3268)
+			if(nCode >= 3266 && nCode <= 3268)
 			{
-				strValue= @"LENG";
+				strValue = @"LENG";
 				break;
 			}
-			if(nCode>=3269 && nCode<=3308)
+			if(nCode >= 3269 && nCode <= 3308)
 			{
-				strValue= @"LI";
+				strValue = @"LI";
 			}
 			if(nCode==3309)
 			{
-				strValue= @"LIA";
+				strValue = @"LIA";
 				break;
 			}
-			if(nCode>=3310 && nCode<=3323)
+			if(nCode >= 3310 && nCode <= 3323)
 			{
-				strValue= @"LIAN";
+				strValue = @"LIAN";
 				break;
 			}
-			if(nCode>=3324 && nCode<=3334)
+			if(nCode >= 3324 && nCode <= 3334)
 			{
-				strValue= @"LIANG";
+				strValue = @"LIANG";
 				break;
 			}
-			if(nCode>=3335 && nCode<=3347)
+			if(nCode >= 3335 && nCode <= 3347)
 			{
-				strValue= @"LIAO";
+				strValue = @"LIAO";
 				break;
 			}
-			if(nCode>=3348 && nCode<=3352)
+			if(nCode >= 3348 && nCode <= 3352)
 			{
-				strValue= @"LIE";
+				strValue = @"LIE";
 				break;
 			}
-			if(nCode>=3353 && nCode<=3363)
+			if(nCode >= 3353 && nCode <= 3363)
 			{
-				strValue= @"LIN";
+				strValue = @"LIN";
 				break;
 			}
-			if(nCode>=3364 && nCode<=3378)
+			if(nCode >= 3364 && nCode <= 3378)
 			{
-				strValue= @"LING";
+				strValue = @"LING";
 				break;
 			}
-			if(nCode>=3379 && nCode<=3389)
+			if(nCode >= 3379 && nCode <= 3389)
 			{
-				strValue= @"LIU";
+				strValue = @"LIU";
 				break;
 			}
-			if(nCode>=3390 && nCode<=3404)
+			if(nCode >= 3390 && nCode <= 3404)
 			{
-				strValue= @"LONG";
+				strValue = @"LONG";
 				break;
 			}
-			if(nCode>=3405 && nCode<=3410)
+			if(nCode >= 3405 && nCode <= 3410)
 			{
-				strValue= @"LOU";
+				strValue = @"LOU";
 				break;
 			}
-			if(nCode>=3411 && nCode<=3444)
+			if(nCode >= 3411 && nCode <= 3444)
 			{
-				strValue= @"LU";
+				strValue = @"LU";
 				break;
 			}
-			if(nCode>=3445 && nCode<=3450)
+			if(nCode >= 3445 && nCode <= 3450)
 			{
-				strValue= @"LUAN";
+				strValue = @"LUAN";
 				break;
 			}
-			if(nCode>=3451 && nCode<=3452)
+			if(nCode >= 3451 && nCode <= 3452)
 			{
-				strValue= @"LUE";
+				strValue = @"LUE";
 				break;
 			}
-			if(nCode>=3453 && nCode<=3459)
+			if(nCode >= 3453 && nCode <= 3459)
 			{
-				strValue= @"LUN";
+				strValue = @"LUN";
 				break;
 			}
-			if(nCode>=3460 && nCode<=3471)
+			if(nCode >= 3460 && nCode <= 3471)
 			{
-				strValue= @"LUO";
+				strValue = @"LUO";
 				break;
 			}
-			if(nCode>=3472 && nCode<=3480)
+			if(nCode >= 3472 && nCode <= 3480)
 			{
-				strValue= @"MA";
+				strValue = @"MA";
 				break;
 			}
-			if(nCode>=3481 && nCode<=3486)
+			if(nCode >= 3481 && nCode <= 3486)
 			{
-				strValue= @"MAI";
+				strValue = @"MAI";
 				break;
 			}
-			if(nCode>=3487 && nCode<=3501)
+			if(nCode >= 3487 && nCode <= 3501)
 			{
-				strValue= @"MAN";
+				strValue = @"MAN";
 				break;
 			}
-			if(nCode>=3502 && nCode<=3507)
+			if(nCode >= 3502 && nCode <= 3507)
 			{
-				strValue= @"MANG";
+				strValue = @"MANG";
 				break;
 			}
-			if(nCode>=3508 && nCode<=3519)
+			if(nCode >= 3508 && nCode <= 3519)
 			{
-				strValue= @"MAO";
+				strValue = @"MAO";
 				break;
 			}
 			if(nCode==3520)
 			{
-				strValue= @"ME";
+				strValue = @"ME";
 				break;
 			}
-			if(nCode>=3521 && nCode<=3536)
+			if(nCode >= 3521 && nCode <= 3536)
 			{
-				strValue= @"MEI";
+				strValue = @"MEI";
 				break;
 			}
-			if(nCode>=3537 && nCode<=3539)
+			if(nCode >= 3537 && nCode <= 3539)
 			{
-				strValue= @"MEN";
+				strValue = @"MEN";
 				break;
 			}
-			if(nCode>=3540 && nCode<=3547)
+			if(nCode >= 3540 && nCode <= 3547)
 			{
-				strValue= @"MENG";
+				strValue = @"MENG";
 				break;
 			}
-			if(nCode>=3548 && nCode<=3561)
+			if(nCode >= 3548 && nCode <= 3561)
 			{
-				strValue= @"MI";
+				strValue = @"MI";
 			}
-			if(nCode>=3562 && nCode<=3570)
+			if(nCode >= 3562 && nCode <= 3570)
 			{
-				strValue= @"MIAN";
+				strValue = @"MIAN";
 				break;
 			}
-			if(nCode>=3571 && nCode<=3578)
+			if(nCode >= 3571 && nCode <= 3578)
 			{
-				strValue= @"MIAO";
+				strValue = @"MIAO";
 				break;
 			}
-			if(nCode>=3579 && nCode<=3580)
+			if(nCode >= 3579 && nCode <= 3580)
 			{
-				strValue= @"MIE";
+				strValue = @"MIE";
 				break;
 			}
-			if(nCode>=3581 && nCode<=3586)
+			if(nCode >= 3581 && nCode <= 3586)
 			{
-				strValue= @"MIN";
+				strValue = @"MIN";
 				break;
 			}
-			if(nCode>=3587 && nCode<=3592)
+			if(nCode >= 3587 && nCode <= 3592)
 			{
-				strValue= @"MING";
+				strValue = @"MING";
 				break;
 			}
 			if(nCode==3593)
 			{
-				strValue= @"MIU";
+				strValue = @"MIU";
 				break;
 			}
-			if(nCode>=3594 && nCode<=3616)
+			if(nCode >= 3594 && nCode <= 3616)
 			{
-				strValue= @"MO";
+				strValue = @"MO";
 				break;
 			}
-			if(nCode>=3617 && nCode<=3619)
+			if(nCode >= 3617 && nCode <= 3619)
 			{
-				strValue= @"MOU";
+				strValue = @"MOU";
 				break;
 			}
-			if(nCode>=3620 && nCode<=3634)
+			if(nCode >= 3620 && nCode <= 3634)
 			{
-				strValue= @"MU";
+				strValue = @"MU";
 				break;
 			}
-			if(nCode>=3635 && nCode<=3641)
+			if(nCode >= 3635 && nCode <= 3641)
 			{
-				strValue= @"NA";
+				strValue = @"NA";
 				break;
 			}
-			if(nCode>=3642 && nCode<=3646)
+			if(nCode >= 3642 && nCode <= 3646)
 			{
-				strValue= @"NAI";
+				strValue = @"NAI";
 				break;
 			}
-			if(nCode>=3647 && nCode<=3649)
+			if(nCode >= 3647 && nCode <= 3649)
 			{
-				strValue= @"NAN";
+				strValue = @"NAN";
 				break;
 			}
 			if(nCode==3650)
 			{
-				strValue= @"NANG";
+				strValue = @"NANG";
 				break;
 			}
-			if(nCode>=3651 && nCode<=3655)
+			if(nCode >= 3651 && nCode <= 3655)
 			{
-				strValue= @"NAO";
+				strValue = @"NAO";
 				break;
 			}
 			if(nCode==3656)
 			{
-				strValue= @"NE";
+				strValue = @"NE";
 				break;
 			}
-			if(nCode>=3657 && nCode<=3658)
+			if(nCode >= 3657 && nCode <= 3658)
 			{
-				strValue= @"NEI";
+				strValue = @"NEI";
 				break;
 			}
 			if(nCode==3659)
 			{
-				strValue= @"NEN";
+				strValue = @"NEN";
 				break;
 			}
 			if(nCode==3660)
 			{
-				strValue= @"NENG";
+				strValue = @"NENG";
 				break;
 			}
-			if(nCode>=3661 && nCode<=3671)
+			if(nCode >= 3661 && nCode <= 3671)
 			{
-				strValue= @"NI";
+				strValue = @"NI";
 				break;
 			}
-			if(nCode>=3672 && nCode<=3678)
+			if(nCode >= 3672 && nCode <= 3678)
 			{
-				strValue= @"NIAN";
+				strValue = @"NIAN";
 				break;
 			}
-			if(nCode>=3679 && nCode<=3680)
+			if(nCode >= 3679 && nCode <= 3680)
 			{
-				strValue= @"NIANG";
+				strValue = @"NIANG";
 				break;
 			}
-			if(nCode>=3681 && nCode<=3682)
+			if(nCode >= 3681 && nCode <= 3682)
 			{
-				strValue= @"NIAO";
+				strValue = @"NIAO";
 				break;
 			}
-			if(nCode>=3683 && nCode<=3689)
+			if(nCode >= 3683 && nCode <= 3689)
 			{
-				strValue= @"NIE";
+				strValue = @"NIE";
 				break;
 			}
 			if(nCode==3690)
 			{
-				strValue= @"NIN";
+				strValue = @"NIN";
 				break;
 			}
-			if(nCode>=3691 && nCode<=3702)
+			if(nCode >= 3691 && nCode <= 3702)
 			{
-				strValue= @"NING";
+				strValue = @"NING";
 				break;
 			}
-			if(nCode>=3703 && nCode<=3706)
+			if(nCode >= 3703 && nCode <= 3706)
 			{
-				strValue= @"NIU";
+				strValue = @"NIU";
 				break;
 			}
-			if(nCode>=3707 && nCode<=3710)
+			if(nCode >= 3707 && nCode <= 3710)
 			{
-				strValue= @"NONG";
+				strValue = @"NONG";
 				break;
 			}
-			if(nCode>=3711 && nCode<=3714)
+			if(nCode >= 3711 && nCode <= 3714)
 			{
-				strValue= @"NU";
+				strValue = @"NU";
 				break;
 			}
 			if(nCode==3715)
 			{
-				strValue= @"NUAN";
+				strValue = @"NUAN";
 				break;
 			}
-			if(nCode>=3716 && nCode<=3717)
+			if(nCode >= 3716 && nCode <= 3717)
 			{
-				strValue= @"NUE";
+				strValue = @"NUE";
 				break;
 			}
-			if(nCode>=3718 && nCode<=3721)
+			if(nCode >= 3718 && nCode <= 3721)
 			{
-				strValue= @"NUO";
+				strValue = @"NUO";
 				break;
 			}
 			if(nCode==3722)
 			{
-				strValue= @"O";
+				strValue = @"O";
 				break;
 			}
-			if(nCode>=3723 && nCode<=3729)
+			if(nCode >= 3723 && nCode <= 3729)
 			{
-				strValue= @"OU";
+				strValue = @"OU";
 				break;
 			}
-			if(nCode>=3730 && nCode<=3735)
+			if(nCode >= 3730 && nCode <= 3735)
 			{
-				strValue= @"PA";
+				strValue = @"PA";
 				break;
 			}
-			if(nCode>=3736 && nCode<=3741)
+			if(nCode >= 3736 && nCode <= 3741)
 			{
-				strValue= @"PAI";
+				strValue = @"PAI";
 				break;
 			}
-			if(nCode>=3742 && nCode<=3749)
+			if(nCode >= 3742 && nCode <= 3749)
 			{
-				strValue= @"PAN";
+				strValue = @"PAN";
 				break;
 			}
-			if(nCode>=3750 && nCode<=3754)
+			if(nCode >= 3750 && nCode <= 3754)
 			{
-				strValue= @"PANG";
+				strValue = @"PANG";
 				break;
 			}
-			if(nCode>=3755 && nCode<=3761)
+			if(nCode >= 3755 && nCode <= 3761)
 			{
-				strValue= @"PAO";
+				strValue = @"PAO";
 				break;
 			}
-			if(nCode>=3762 && nCode<=3770)
+			if(nCode >= 3762 && nCode <= 3770)
 			{
-				strValue= @"PEI";
+				strValue = @"PEI";
 				break;
 			}
-			if(nCode>=3771 && nCode<=3772)
+			if(nCode >= 3771 && nCode <= 3772)
 			{
-				strValue= @"PEN";
+				strValue = @"PEN";
 				break;
 			}
-			if(nCode>=3773 && nCode<=3786)
+			if(nCode >= 3773 && nCode <= 3786)
 			{
-				strValue= @"PENG";
+				strValue = @"PENG";
 				break;
 			}
-			if(nCode>=3787 && nCode<=3809)
+			if(nCode >= 3787 && nCode <= 3809)
 			{
-				strValue= @"PI";
+				strValue = @"PI";
 				break;
 			}
-			if(nCode>=3810 && nCode<=3813)
+			if(nCode >= 3810 && nCode <= 3813)
 			{
-				strValue= @"PIAN";
+				strValue = @"PIAN";
 				break;
 			}
-			if(nCode>=3814 && nCode<=3817)
+			if(nCode >= 3814 && nCode <= 3817)
 			{
-				strValue= @"PIAO";
+				strValue = @"PIAO";
 				break;
 			}
-			if(nCode>=3818 && nCode<=3819)
+			if(nCode >= 3818 && nCode <= 3819)
 			{
-				strValue= @"PIE";
+				strValue = @"PIE";
 				break;
 			}
-			if(nCode>=3820 && nCode<=3824)
+			if(nCode >= 3820 && nCode <= 3824)
 			{
-				strValue= @"PIN";
+				strValue = @"PIN";
 				break;
 			}
-			if(nCode>=3825 && nCode<=3833)
+			if(nCode >= 3825 && nCode <= 3833)
 			{
-				strValue= @"PING";
+				strValue = @"PING";
 				break;
 			}
-			if(nCode>=3834 && nCode<=3841)
+			if(nCode >= 3834 && nCode <= 3841)
 			{
-				strValue= @"PO";
+				strValue = @"PO";
 				break;
 			}
 			if(nCode==3842)
 			{
-				strValue= @"POU";
+				strValue = @"POU";
 				break;
 			}
-			if(nCode>=3843 && nCode<=3857)
+			if(nCode >= 3843 && nCode <= 3857)
 			{
-				strValue= @"PU";
+				strValue = @"PU";
 				break;
 			}
-			if(nCode>=3858 && nCode<=3893)
+			if(nCode >= 3858 && nCode <= 3893)
 			{
-				strValue= @"QI";
+				strValue = @"QI";
 				break;
 			}
-			if(nCode==3894||nCode>=3901 && nCode<=3902)
+			if(nCode==3894||(nCode >= 3901 && nCode <= 3902))
 			{
-				strValue= @"QIA";
+				strValue = @"QIA";
 				break;
 			}
-			if(nCode>=3903 && nCode<=3924)
+			if(nCode >= 3903 && nCode <= 3924)
 			{
-				strValue= @"QIAN";
+				strValue = @"QIAN";
 				break;
 			}
-			if(nCode>=3925 && nCode<=3932)
+			if(nCode >= 3925 && nCode <= 3932)
 			{
-				strValue= @"QIANG";
+				strValue = @"QIANG";
 				break;
 			}
-			if(nCode>=3933 && nCode<=3947)
+			if(nCode >= 3933 && nCode <= 3947)
 			{
-				strValue= @"QIAO";
+				strValue = @"QIAO";
 				break;
 			}
-			if(nCode>=3948 && nCode<=3952)
+			if(nCode >= 3948 && nCode <= 3952)
 			{
-				strValue= @"QIE";
+				strValue = @"QIE";
 				break;
 			}
-			if(nCode>=3953 && nCode<=3963)
+			if(nCode >= 3953 && nCode <= 3963)
 			{
-				strValue= @"QIN";
+				strValue = @"QIN";
 				break;
 			}
-			if(nCode>=3964 && nCode<=3976)
+			if(nCode >= 3964 && nCode <= 3976)
 			{
-				strValue= @"QING";
+				strValue = @"QING";
 				break;
 			}
-			if(nCode>=3977 && nCode<=3978)
+			if(nCode >= 3977 && nCode <= 3978)
 			{
-				strValue= @"QIONG";
+				strValue = @"QIONG";
 				break;
 			}
-			if(nCode>=3979 && nCode<=3986)
+			if(nCode >= 3979 && nCode <= 3986)
 			{
-				strValue= @"QIU";
+				strValue = @"QIU";
 				break;
 			}
-			if(nCode>=3987 && nCode<=4005)
+			if(nCode >= 3987 && nCode <= 4005)
 			{
-				strValue= @"QU";
+				strValue = @"QU";
 				break;
 			}
-			if(nCode>=4006 && nCode<=4016)
+			if(nCode >= 4006 && nCode <= 4016)
 			{
-				strValue= @"QUAN";
+				strValue = @"QUAN";
 				break;
 			}
-			if(nCode>=4017 && nCode<=4024)
+			if(nCode >= 4017 && nCode <= 4024)
 			{
-				strValue= @"QUE";
+				strValue = @"QUE";
 				break;
 			}
-			if(nCode>=4025 && nCode<=4026)
+			if(nCode >= 4025 && nCode <= 4026)
 			{
-				strValue= @"QUN";
+				strValue = @"QUN";
 				break;
 			}
-			if(nCode>=4027 && nCode<=4030)
+			if(nCode >= 4027 && nCode <= 4030)
 			{
-				strValue= @"RAN";
+				strValue = @"RAN";
 				break;
 			}
-			if(nCode>=4031 && nCode<=4035)
+			if(nCode >= 4031 && nCode <= 4035)
 			{
-				strValue= @"RANG";
+				strValue = @"RANG";
 			}
-			if(nCode>=4036 && nCode<=4038)
+			if(nCode >= 4036 && nCode <= 4038)
 			{
-				strValue= @"RAO";
+				strValue = @"RAO";
 				break;
 			}
-			if(nCode>=4039 && nCode<=4040)
+			if(nCode >= 4039 && nCode <= 4040)
 			{
-				strValue= @"RE";
+				strValue = @"RE";
 				break;
 			}
-			if(nCode>=4041 && nCode<=4050)
+			if(nCode >= 4041 && nCode <= 4050)
 			{
-				strValue= @"REN";
+				strValue = @"REN";
 				break;
 			}
-			if(nCode>=4051 && nCode<=4052)
+			if(nCode >= 4051 && nCode <= 4052)
 			{
-				strValue= @"RENG";
+				strValue = @"RENG";
 				break;
 			}
 			if(nCode==4053)
 			{
-				strValue= @"RI";
+				strValue = @"RI";
 				break;
 			}
-			if(nCode>=4054 && nCode<=4063)
+			if(nCode >= 4054 && nCode <= 4063)
 			{
-				strValue= @"RONG";
+				strValue = @"RONG";
 				break;
 			}
-			if(nCode>=4064 && nCode<=4066)
+			if(nCode >= 4064 && nCode <= 4066)
 			{
-				strValue= @"ROU";
+				strValue = @"ROU";
 				break;
 			}
-			if(nCode>=4067 && nCode<=4076)
+			if(nCode >= 4067 && nCode <= 4076)
 			{
-				strValue= @"RU";
+				strValue = @"RU";
 				break;
 			}
-			if(nCode>=4077 && nCode<=4078)
+			if(nCode >= 4077 && nCode <= 4078)
 			{
-				strValue= @"RUAN";
+				strValue = @"RUAN";
 				break;
 			}
-			if(nCode>=4079 && nCode<=4081)
+			if(nCode >= 4079 && nCode <= 4081)
 			{
-				strValue= @"RUI";
+				strValue = @"RUI";
 				break;
 			}
-			if(nCode>=4082 && nCode<=4083)
+			if(nCode >= 4082 && nCode <= 4083)
 			{
-				strValue= @"RUN";
+				strValue = @"RUN";
 				break;
 			}
-			if(nCode>=4084 && nCode<=4085)
+			if(nCode >= 4084 && nCode <= 4085)
 			{
-				strValue= @"RUO";
+				strValue = @"RUO";
 				break;
 			}
-			if(nCode>=4086 && nCode<=4088)
+			if(nCode >= 4086 && nCode <= 4088)
 			{
-				strValue= @"SA";
+				strValue = @"SA";
 				break;
 			}
-			if(nCode>=4089 && nCode<=4092)
+			if(nCode >= 4089 && nCode <= 4092)
 			{
-				strValue= @"SAI";
+				strValue = @"SAI";
 				break;
 			}
-			if(nCode>=4093 && nCode<=4094)
+			if(nCode >= 4093 && nCode <= 4094)
 			{
-				strValue= @"SAN";
+				strValue = @"SAN";
 				break;
 			}
-			if(nCode>=4101 && nCode<=4102)
+			if(nCode >= 4101 && nCode <= 4102)
 			{
-				strValue= @"SAN";
+				strValue = @"SAN";
 				break;
 			}
-			if(nCode>=4103 && nCode<=4105)
+			if(nCode >= 4103 && nCode <= 4105)
 			{
-				strValue= @"SANG";
+				strValue = @"SANG";
 				break;
 			}
-			if(nCode>=4106 && nCode<=4109)
+			if(nCode >= 4106 && nCode <= 4109)
 			{
-				strValue= @"SAO";
+				strValue = @"SAO";
 				break;
 			}
-			if(nCode>=4110 && nCode<=4112)
+			if(nCode >= 4110 && nCode <= 4112)
 			{
-				strValue= @"SE";
+				strValue = @"SE";
 				break;
 			}
 			if(nCode==4113)
 			{
-				strValue= @"SEN";
+				strValue = @"SEN";
 			}
 			if(nCode==4114)
 			{
-				strValue= @"SENG";
+				strValue = @"SENG";
 				break;
 			}
-			if(nCode>=4115 && nCode<=4123)
+			if(nCode >= 4115 && nCode <= 4123)
 			{
-				strValue= @"SHA";
+				strValue = @"SHA";
 				break;
 			}
-			if(nCode>=4124 && nCode<=4125)
+			if(nCode >= 4124 && nCode <= 4125)
 			{
-				strValue= @"SHAI";
+				strValue = @"SHAI";
 				break;
 			}
-			if(nCode>=4126 && nCode<=4141)
+			if(nCode >= 4126 && nCode <= 4141)
 			{
-				strValue= @"SHAN";
+				strValue = @"SHAN";
 				break;
 			}
-			if(nCode>=4142 && nCode<=4149)
+			if(nCode >= 4142 && nCode <= 4149)
 			{
-				strValue= @"SHANG";
+				strValue = @"SHANG";
 				break;
 			}
-			if(nCode>=4150 && nCode<=4160)
+			if(nCode >= 4150 && nCode <= 4160)
 			{
-				strValue= @"SHAO";
+				strValue = @"SHAO";
 				break;
 			}
-			if(nCode>=4161 && nCode<=4172)
+			if(nCode >= 4161 && nCode <= 4172)
 			{
-				strValue= @"SHE";
+				strValue = @"SHE";
 				break;
 			}
-			if(nCode>=4173 && nCode<=4188)
+			if(nCode >= 4173 && nCode <= 4188)
 			{
-				strValue= @"SHEN";
+				strValue = @"SHEN";
 				break;
 			}
-			if(nCode>=4189 && nCode<=4205)
+			if(nCode >= 4189 && nCode <= 4205)
 			{
-				strValue= @"SHENG";
+				strValue = @"SHENG";
 				break;
 			}
-			if(nCode>=4206 && nCode<=4252)
+			if(nCode >= 4206 && nCode <= 4252)
 			{
-				strValue= @"SHI";
+				strValue = @"SHI";
 				break;
 			}
-			if(nCode>=4253 && nCode<=4262)
+			if(nCode >= 4253 && nCode <= 4262)
 			{
-				strValue= @"SHOU";
+				strValue = @"SHOU";
 				break;
 			}
-			if(nCode>=4263 && nCode<=4301)
+			if(nCode >= 4263 && nCode <= 4301)
 			{
-				strValue= @"SHU";
+				strValue = @"SHU";
 				break;
 			}
-			if(nCode>=4302 && nCode<=4303)
+			if(nCode >= 4302 && nCode <= 4303)
 			{
-				strValue= @"SHUA";
+				strValue = @"SHUA";
 				break;
 			}
-			if(nCode>=4304 && nCode<=4307)
+			if(nCode >= 4304 && nCode <= 4307)
 			{
-				strValue= @"SHUAI";
+				strValue = @"SHUAI";
 				break;
 			}
-			if(nCode>=4308 && nCode<=4309)
+			if(nCode >= 4308 && nCode <= 4309)
 			{
-				strValue= @"SHUAN";
+				strValue = @"SHUAN";
 				break;
 			}
-			if(nCode>=4310 && nCode<=4312)
+			if(nCode >= 4310 && nCode <= 4312)
 			{
-				strValue= @"SHUANG";
+				strValue = @"SHUANG";
 				break;
 			}
-			if(nCode>=4313 && nCode<=4316)
+			if(nCode >= 4313 && nCode <= 4316)
 			{
-				strValue= @"SHUI";
+				strValue = @"SHUI";
 				break;
 			}
-			if(nCode>=4317 && nCode<=4320)
+			if(nCode >= 4317 && nCode <= 4320)
 			{
-				strValue= @"SHUN";
+				strValue = @"SHUN";
 				break;
 			}
-			if(nCode>=4321 && nCode<=4324)
+			if(nCode >= 4321 && nCode <= 4324)
 			{
-				strValue= @"SHUO";
+				strValue = @"SHUO";
 				break;
 			}
-			if(nCode>=4325 && nCode<=4340)
+			if(nCode >= 4325 && nCode <= 4340)
 			{
-				strValue= @"SI";
+				strValue = @"SI";
 				break;
 			}
-			if(nCode>=4341 && nCode<=4348)
+			if(nCode >= 4341 && nCode <= 4348)
 			{
-				strValue= @"SONG";
+				strValue = @"SONG";
 				break;
 			}
-			if(nCode>=4349 && nCode<=4352)
+			if(nCode >= 4349 && nCode <= 4352)
 			{
-				strValue= @"SOU";
+				strValue = @"SOU";
 				break;
 			}
-			if(nCode>=4353 && nCode<=4364)
+			if(nCode >= 4353 && nCode <= 4364)
 			{
-				strValue= @"SU";
+				strValue = @"SU";
 				break;
 			}
-			if(nCode>=4365 && nCode<=4367)
+			if(nCode >= 4365 && nCode <= 4367)
 			{
-				strValue= @"SUAN";
+				strValue = @"SUAN";
 				break;
 			}
-			if(nCode>=4368 && nCode<=4378)
+			if(nCode >= 4368 && nCode <= 4378)
 			{
-				strValue= @"SUI";
+				strValue = @"SUI";
 				break;
 			}
-			if(nCode>=4379 && nCode<=4381)
+			if(nCode >= 4379 && nCode <= 4381)
 			{
-				strValue= @"SUN";
+				strValue = @"SUN";
 				break;
 			}
-			if(nCode>=4382 && nCode<=4389)
+			if(nCode >= 4382 && nCode <= 4389)
 			{
-				strValue= @"SUO";
+				strValue = @"SUO";
 				break;
 			}
-			if(nCode>=4390 && nCode<=4404)
+			if(nCode >= 4390 && nCode <= 4404)
 			{
-				strValue= @"TA";
+				strValue = @"TA";
 				break;
 			}
-			if(nCode>=4405 && nCode<=4413)
+			if(nCode >= 4405 && nCode <= 4413)
 			{
-				strValue= @"TAI";
+				strValue = @"TAI";
 				break;
 			}
-			if(nCode>=4414 && nCode<=4431)
+			if(nCode >= 4414 && nCode <= 4431)
 			{
-				strValue= @"TAN";
+				strValue = @"TAN";
 				break;
 			}
-			if(nCode>=4432 && nCode<=4444)
+			if(nCode >= 4432 && nCode <= 4444)
 			{
-				strValue= @"TANG";
+				strValue = @"TANG";
 				break;
 			}
-			if(nCode>=4445 && nCode<=4455)
+			if(nCode >= 4445 && nCode <= 4455)
 			{
-				strValue= @"TAO";
+				strValue = @"TAO";
 				break;
 			}
 			if(nCode==4456)
 			{
-				strValue= @"TE";
+				strValue = @"TE";
 				break;
 			}
-			if(nCode>=4457 && nCode<=4460)
+			if(nCode >= 4457 && nCode <= 4460)
 			{
-				strValue= @"TENG";
+				strValue = @"TENG";
 				break;
 			}
-			if(nCode>=4461 && nCode<=4475)
+			if(nCode >= 4461 && nCode <= 4475)
 			{
-				strValue= @"TI";
+				strValue = @"TI";
 				break;
 			}
-			if(nCode>=4476 && nCode<=4483)
+			if(nCode >= 4476 && nCode <= 4483)
 			{
-				strValue= @"TIAN";
+				strValue = @"TIAN";
 				break;
 			}
-			if(nCode>=4484 && nCode<=4488)
+			if(nCode >= 4484 && nCode <= 4488)
 			{
-				strValue= @"TIAO";
+				strValue = @"TIAO";
 				break;
 			}
-			if(nCode>=4489 && nCode<=4491)
+			if(nCode >= 4489 && nCode <= 4491)
 			{
-				strValue= @"TIE";
+				strValue = @"TIE";
 				break;
 			}
-			if(nCode>=4492 && nCode<=4507)
+			if(nCode >= 4492 && nCode <= 4507)
 			{
-				strValue= @"TING";
+				strValue = @"TING";
 				break;
 			}
-			if(nCode>=4508 && nCode<=4520)
+			if(nCode >= 4508 && nCode <= 4520)
 			{
-				strValue= @"TONG";
+				strValue = @"TONG";
 				break;
 			}
-			if(nCode>=4521 && nCode<=4524)
+			if(nCode >= 4521 && nCode <= 4524)
 			{
-				strValue= @"TOU";
+				strValue = @"TOU";
 				break;
 			}
-			if(nCode>=4525 && nCode<=4535)
+			if(nCode >= 4525 && nCode <= 4535)
 			{
-				strValue= @"TU";
+				strValue = @"TU";
 				break;
 			}
-			if(nCode>=4536 && nCode<=4537)
+			if(nCode >= 4536 && nCode <= 4537)
 			{
-				strValue= @"TUAN";
+				strValue = @"TUAN";
 				break;
 			}
-			if(nCode>=4538 && nCode<=4543)
+			if(nCode >= 4538 && nCode <= 4543)
 			{
-				strValue= @"TUI";
+				strValue = @"TUI";
 				break;
 			}
-			if(nCode>=4544 && nCode<=4546)
+			if(nCode >= 4544 && nCode <= 4546)
 			{
-				strValue= @"TUN";
+				strValue = @"TUN";
 				break;
 			}
-			if(nCode>=4547 && nCode<=4557)
+			if(nCode >= 4547 && nCode <= 4557)
 			{
-				strValue= @"TUO";
+				strValue = @"TUO";
 				break;
 			}
-			if(nCode>=4558 && nCode<=4564)
+			if(nCode >= 4558 && nCode <= 4564)
 			{
-				strValue= @"WA";
+				strValue = @"WA";
 				break;
 			}
-			if(nCode>=4565 && nCode<=4566)
+			if(nCode >= 4565 && nCode <= 4566)
 			{
-				strValue= @"WAI";
+				strValue = @"WAI";
 				break;
 			}
-			if(nCode>=4567 && nCode<=4583)
+			if(nCode >= 4567 && nCode <= 4583)
 			{
-				strValue= @"WAN";
+				strValue = @"WAN";
 				break;
 			}
-			if(nCode>=4584 && nCode<=4593)
+			if(nCode >= 4584 && nCode <= 4593)
 			{
-				strValue= @"WANG";
+				strValue = @"WANG";
 				break;
 			}
-			if(nCode>=4594 && nCode<=4632)
+			if(nCode >= 4594 && nCode <= 4632)
 			{
-				strValue= @"WEI";
+				strValue = @"WEI";
 				break;
 			}
-			if(nCode>=4633 && nCode<=4642)
+			if(nCode >= 4633 && nCode <= 4642)
 			{
-				strValue= @"WEN";
+				strValue = @"WEN";
 				break;
 			}
-			if(nCode>=4643 && nCode<=4645)
+			if(nCode >= 4643 && nCode <= 4645)
 			{
-				strValue= @"WENG";
+				strValue = @"WENG";
 				break;
 			}
-			if(nCode>=4646 && nCode<=4654)
+			if(nCode >= 4646 && nCode <= 4654)
 			{
-				strValue= @"WO";
+				strValue = @"WO";
 				break;
 			}
-			if(nCode>=4655 && nCode<=4683)
+			if(nCode >= 4655 && nCode <= 4683)
 			{
-				strValue= @"WU";
+				strValue = @"WU";
 				break;
 			}
-			if(nCode>=4684 && nCode<=4724)
+			if(nCode >= 4684 && nCode <= 4724)
 			{
-				strValue= @"XI";
+				strValue = @"XI";
 				break;
 			}
-			if(nCode>=4725 && nCode<=4737)
+			if(nCode >= 4725 && nCode <= 4737)
 			{
-				strValue= @"XIA";
+				strValue = @"XIA";
 				break;
 			}
-			if(nCode>=4738 && nCode<=4763)
+			if(nCode >= 4738 && nCode <= 4763)
 			{
-				strValue= @"XIAN";
+				strValue = @"XIAN";
 				break;
 			}
-			if(nCode>=4764 && nCode<=4783)
+			if(nCode >= 4764 && nCode <= 4783)
 			{
-				strValue= @"XIANG";
+				strValue = @"XIANG";
 				break;
 			}
-			if(nCode>=4784 && nCode<=4807)
+			if(nCode >= 4784 && nCode <= 4807)
 			{
-				strValue= @"XIAO";
+				strValue = @"XIAO";
 				break;
 			}
-			if(nCode>=4809 && nCode<=4828)
+			if(nCode >= 4809 && nCode <= 4828)
 			{
-				strValue= @"XIE";
+				strValue = @"XIE";
 				break;
 			}
-			if(nCode>=4829 && nCode<=4838)
+			if(nCode >= 4829 && nCode <= 4838)
 			{
-				strValue= @"XIN";
+				strValue = @"XIN";
 				break;
 			}
-			if(nCode>=4839 && nCode<=4853)
+			if(nCode >= 4839 && nCode <= 4853)
 			{
-				strValue= @"XING";
+				strValue = @"XING";
 				break;
 			}
-			if(nCode>=4854 && nCode<=4860)
+			if(nCode >= 4854 && nCode <= 4860)
 			{
-				strValue= @"XIONG";
+				strValue = @"XIONG";
 				break;
 			}
-			if(nCode>=4861 && nCode<=4869)
+			if(nCode >= 4861 && nCode <= 4869)
 			{
-				strValue= @"XIU";
+				strValue = @"XIU";
 				break;
 			}
-			if(nCode>=4870 && nCode<=4888)
+			if(nCode >= 4870 && nCode <= 4888)
 			{
-				strValue= @"XU";
+				strValue = @"XU";
 				break;
 			}
-			if(nCode>=4889 && nCode<=4904)
+			if(nCode >= 4889 && nCode <= 4904)
 			{
-				strValue= @"XUAN";
+				strValue = @"XUAN";
 				break;
 			}
-			if(nCode>=4905 && nCode<=4910)
+			if(nCode >= 4905 && nCode <= 4910)
 			{
-				strValue= @"XUE";
+				strValue = @"XUE";
 				break;
 			}
-			if(nCode>=4911 && nCode<=4924)
+			if(nCode >= 4911 && nCode <= 4924)
 			{
-				strValue= @"XUN";
+				strValue = @"XUN";
 				break;
 			}
-			if(nCode>=4925 && nCode<=4940)
+			if(nCode >= 4925 && nCode <= 4940)
 			{
-				strValue= @"YA";
+				strValue = @"YA";
 				break;
 			}
-			if(nCode>=4941 && nCode<=4973)
+			if(nCode >= 4941 && nCode <= 4973)
 			{
-				strValue= @"YAN";
+				strValue = @"YAN";
 				break;
 			}
-			if(nCode>=4974 && nCode<=4990)
+			if(nCode >= 4974 && nCode <= 4990)
 			{
-				strValue= @"YANG";
+				strValue = @"YANG";
 				break;
 			}
-			if(nCode>=4991 && nCode<=5011)
+			if(nCode >= 4991 && nCode <= 5011)
 			{
-				strValue= @"YAO";
+				strValue = @"YAO";
 				break;
 			}
-			if(nCode>=5012 && nCode<=5026)
+			if(nCode >= 5012 && nCode <= 5026)
 			{
-				strValue= @"YE";
+				strValue = @"YE";
 				break;
 			}
-			if(nCode>=5027 && nCode<=5079)
+			if(nCode >= 5027 && nCode <= 5079)
 			{
-				strValue= @"YI";
+				strValue = @"YI";
 				break;
 			}
-			if(nCode>=5080 && nCode<=5101)
+			if(nCode >= 5080 && nCode <= 5101)
 			{
-				strValue= @"YIN";
+				strValue = @"YIN";
 				break;
 			}
-			if(nCode>=5102 && nCode<=5119)
+			if(nCode >= 5102 && nCode <= 5119)
 			{
-				strValue= @"YING";
+				strValue = @"YING";
 				break;
 			}
 			if(nCode==5120)
 			{
-				strValue= @"YO";
+				strValue = @"YO";
 				break;
 			}
-			if(nCode>=5121 && nCode<=5135)
+			if(nCode >= 5121 && nCode <= 5135)
 			{
-				strValue= @"YONG";
+				strValue = @"YONG";
 				break;
 			}
-			if(nCode>=5136 && nCode<=5155)
+			if(nCode >= 5136 && nCode <= 5155)
 			{
-				strValue= @"YOU";
+				strValue = @"YOU";
 				break;
 			}
-			if(nCode>=5156 && nCode<=5206)
+			if(nCode >= 5156 && nCode <= 5206)
 			{
-				strValue= @"YU";
+				strValue = @"YU";
 				break;
 			}
-			if(nCode>=5207 && nCode<=5226)
+			if(nCode >= 5207 && nCode <= 5226)
 			{
-				strValue= @"YUAN";
+				strValue = @"YUAN";
 				break;
 			}
-			if(nCode>=5227 && nCode<=5236)
+			if(nCode >= 5227 && nCode <= 5236)
 			{
-				strValue= @"YUE";
+				strValue = @"YUE";
 				break;
 			}
-			if(nCode>=5237 && nCode<=5248)
+			if(nCode >= 5237 && nCode <= 5248)
 			{
-				strValue= @"YUN";
+				strValue = @"YUN";
 				break;
 			}
-			if(nCode>=5249 && nCode<=5251)
+			if(nCode >= 5249 && nCode <= 5251)
 			{
-				strValue= @"ZA";
+				strValue = @"ZA";
 				break;
 			}
-			if(nCode>=5252 && nCode<=5258)
+			if(nCode >= 5252 && nCode <= 5258)
 			{
-				strValue= @"ZAI";
+				strValue = @"ZAI";
 				break;
 			}
-			if(nCode>=5259 && nCode<=5262)
+			if(nCode >= 5259 && nCode <= 5262)
 			{
-				strValue= @"ZAN";
+				strValue = @"ZAN";
 				break;
 			}
-			if(nCode>=5263 && nCode<=5265)
+			if(nCode >= 5263 && nCode <= 5265)
 			{
-				strValue= @"ZANG";
+				strValue = @"ZANG";
 				break;
 			}
-			if(nCode>=5266 && nCode<=5279)
+			if(nCode >= 5266 && nCode <= 5279)
 			{
-				strValue= @"ZAO";
+				strValue = @"ZAO";
 				break;
 			}
-			if(nCode>=5280 && nCode<=5283)
+			if(nCode >= 5280 && nCode <= 5283)
 			{
-				strValue= @"ZE";
+				strValue = @"ZE";
 				break;
 			}
 			if(nCode==5284)
 			{
-				strValue= @"ZEI";
+				strValue = @"ZEI";
 				break;
 			}
 			if(nCode==5285)
 			{
-				strValue= @"ZEN";
+				strValue = @"ZEN";
 				break;
 			}
-			if(nCode>=5286 && nCode<=5289)
+			if(nCode >= 5286 && nCode <= 5289)
 			{
-				strValue= @"ZENG";
+				strValue = @"ZENG";
 				break;
 			}
-			if(nCode>=5290 && nCode<=5309)
+			if(nCode >= 5290 && nCode <= 5309)
 			{
-				strValue= @"ZHA";
+				strValue = @"ZHA";
 				break;
 			}
-			if(nCode>=5310 && nCode<=5315)
+			if(nCode >= 5310 && nCode <= 5315)
 			{
-				strValue= @"ZHAI";
+				strValue = @"ZHAI";
 				break;
 			}
-			if(nCode>=5316 && nCode<=5332)
+			if(nCode >= 5316 && nCode <= 5332)
 			{
-				strValue= @"ZHAN";
+				strValue = @"ZHAN";
 				break;
 			}
-			if(nCode>=5333 && nCode<=5347)
+			if(nCode >= 5333 && nCode <= 5347)
 			{
-				strValue= @"ZHANG";
+				strValue = @"ZHANG";
 				break;
 			}
-			if(nCode>=5348 && nCode<=5357)
+			if(nCode >= 5348 && nCode <= 5357)
 			{
-				strValue= @"ZHAO";
+				strValue = @"ZHAO";
 				break;
 			}
-			if(nCode>=5358 && nCode<=5367)
+			if(nCode >= 5358 && nCode <= 5367)
 			{
-				strValue= @"ZHE";
+				strValue = @"ZHE";
 				break;
 			}
-			if(nCode>=5368 && nCode<=5383)
+			if(nCode >= 5368 && nCode <= 5383)
 			{
-				strValue= @"ZHEN";
+				strValue = @"ZHEN";
 				break;
 			}
-			if(nCode>=5384 && nCode<=5404)
+			if(nCode >= 5384 && nCode <= 5404)
 			{
-				strValue= @"ZHENG";
+				strValue = @"ZHENG";
 				break;
 			}
-			if(nCode>=5405 && nCode<=5447)
+			if(nCode >= 5405 && nCode <= 5447)
 			{
-				strValue= @"ZHI";
+				strValue = @"ZHI";
 				break;
 			}
-			if(nCode>=5448 && nCode<=5458)
+			if(nCode >= 5448 && nCode <= 5458)
 			{
-				strValue= @"ZHONG";
+				strValue = @"ZHONG";
 				break;
 			}
-			if(nCode>=5459 && nCode<=5472)
+			if(nCode >= 5459 && nCode <= 5472)
 			{
-				strValue= @"ZHOU";
+				strValue = @"ZHOU";
 				break;
 			}
-			if(nCode>=5473 && nCode<=5504)
+			if(nCode >= 5473 && nCode <= 5504)
 			{
-				strValue= @"ZHU";
+				strValue = @"ZHU";
 				break;
 			}
-			if(nCode>=5505 && nCode<=5506)
+			if(nCode >= 5505 && nCode <= 5506)
 			{
-				strValue= @"ZHUA";
+				strValue = @"ZHUA";
 				break;
 			}
 			if(nCode==5507)
 			{
-				strValue= @"ZHUAI";
+				strValue = @"ZHUAI";
 				break;
 			}
-			if(nCode>=5508 && nCode<=5513)
+			if(nCode >= 5508 && nCode <= 5513)
 			{
-				strValue= @"ZHUAN";
+				strValue = @"ZHUAN";
 				break;
 			}
-			if(nCode>=5514 && nCode<=5520)
+			if(nCode >= 5514 && nCode <= 5520)
 			{
-				strValue= @"ZHUANG";
+				strValue = @"ZHUANG";
 				break;
 			}
-			if(nCode>=5521 && nCode<=5526)
+			if(nCode >= 5521 && nCode <= 5526)
 			{
-				strValue= @"ZHUI";
+				strValue = @"ZHUI";
 				break;
 			}
-			if(nCode>=5527 && nCode<=5528)
+			if(nCode >= 5527 && nCode <= 5528)
 			{
-				strValue= @"ZHUN";
+				strValue = @"ZHUN";
 				break;
 			}
-			if(nCode>=5529 && nCode<=5539)
+			if(nCode >= 5529 && nCode <= 5539)
 			{
-				strValue= @"ZHUO";
+				strValue = @"ZHUO";
 				break;
 			}
-			if(nCode>=5540 && nCode<=5554)
+			if(nCode >= 5540 && nCode <= 5554)
 			{
-				strValue= @"ZI";
+				strValue = @"ZI";
 				break;
 			}
-			if(nCode>=5555 && nCode<=5561)
+			if(nCode >= 5555 && nCode <= 5561)
 			{
-				strValue= @"ZONG";
+				strValue = @"ZONG";
 				break;
 			}
-			if(nCode>=5562 && nCode<=5565)
+			if(nCode >= 5562 && nCode <= 5565)
 			{
-				strValue= @"ZOU";
+				strValue = @"ZOU";
 				break;
 			}
-			if(nCode>=5566 && nCode<=5573)
+			if(nCode >= 5566 && nCode <= 5573)
 			{
-				strValue= @"ZU";
+				strValue = @"ZU";
 				break;
 			}
-			if(nCode>=5574 && nCode<=5575)
+			if(nCode >= 5574 && nCode <= 5575)
 			{
-				strValue= @"ZUAN";
+				strValue = @"ZUAN";
 				break;
 			}
-			if(nCode>=5576 && nCode<=5579)
+			if(nCode >= 5576 && nCode <= 5579)
 			{
-				strValue= @"ZUI";
+				strValue = @"ZUI";
 				break;
 			}
-			if(nCode>=5580 && nCode<=5581)
+			if(nCode >= 5580 && nCode <= 5581)
 			{
-				strValue= @"ZUN";
+				strValue = @"ZUN";
 				break;
 			}
-			if(nCode>=5582 && nCode<=5589)
+			if(nCode >= 5582 && nCode <= 5589)
 			{
-				strValue= @"ZUO";
+				strValue = @"ZUO";
 				break;
 			}
 	}
@@ -5807,88 +5797,64 @@ static char firstLetterArray[HANZI_COUNT] =
 "whxgzxwznnqzjzjjqjccchykxbzszcnjtllcqxynjnckycynccqnxyewyczdcjycchyjlbtzyycqwlpgpyllgktltlgkgqbgychj"
 "xy";
 
-char pinyinFirstLetter(unsigned short hanzi)
-{
+char pinyinFirstLetter(unsigned short hanzi) {
 	int index = hanzi - HANZI_START;
-	if (index >= 0 && index <= HANZI_COUNT)
-	{
+	if (index >= 0 && index <= HANZI_COUNT) {
 		return firstLetterArray[index];
-	}
-	else
-	{
+	} else {
 		return '#';
 	}
 }
- 
 
 @implementation ChineseToPinyin
 
-
-+ (NSString *) pinyinFromChiniseString:(NSString *)string
-{
-	if( !string || ![string length] ) return nil;
-    NSLog(@"pinyinFromChiniseString %@", string);
++ (NSString *) pinyinFromChiniseString:(NSString *)string {
+	if(!string || ![string length]) return nil;
 	
 	NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding( kCFStringEncodingGB_18030_2000);
-	NSData * gb2312_data = [string dataUsingEncoding:enc];
+	NSData *gb2312_data = [string dataUsingEncoding:enc];
 	
     unsigned char ucHigh, ucLow;
-    int  nCode;
-    NSString * strValue = @"";
-	int iLen = [gb2312_data length];
-	char * gb2312_string = ( char *)[gb2312_data bytes];
-    for (int i=0; i< iLen; i++)
-    {
-        if ( (unsigned char)gb2312_string[i] < 0x80 )
-		{
-			strValue = [strValue stringByAppendingFormat:@"%c", gb2312_string[i] > 95 ? gb2312_string[i]-32 : gb2312_string[i] ];
+    int nCode;
+    NSString *strValue = @"";
+	NSUInteger iLen = [gb2312_data length];
+	char *gb2312_string = (char *)[gb2312_data bytes];
+    for (int i = 0; i < iLen; i++) {
+        if ((unsigned char)gb2312_string[i] < 0x80 ) {
+			strValue = [strValue stringByAppendingFormat:@"%c", gb2312_string[i] > 95 ? gb2312_string[i] - 32 : gb2312_string[i]];
             continue;
 		}
 		
         ucHigh = (unsigned char)gb2312_string[i];
-        ucLow  = (unsigned char)gb2312_string[i+1];
-        NSLog(@"ucHigh %u %x; ucLow %u %x", ucHigh, ucHigh, ucLow, ucLow);
-        
+        ucLow  = (unsigned char)gb2312_string[i + 1];
         if ( ucHigh < 0xa1 || ucLow < 0xa1)
             continue;
         else
             nCode = (ucHigh - 0xa0) * 100 + ucLow - 0xa0;
 		
-        NSLog(@"nCode %u", nCode); //ncode是汉字的拼音索引
-        /* comment by willonboy
-         "沈"
-         ucHigh 201 c9; ucLow 242 f2  //c9f2是gb18030的编码
-         nCode 4182 //"沈"字的汉字在gb18030代码表中的区号(41)与位号(82) 详见:GB2312-1980信息交换用汉字编码字符集基本集(臧韦书签版).pdf 第10页~33页
-         */
-		NSString * strRes = FindLetter( nCode );
-        strRes = [strRes capitalizedString];
+		NSString *strRes = FindLetter(nCode);
 		strValue = [strValue stringByAppendingString:strRes];
-
         i++;
-    }
-	
-	return [[[NSString alloc] initWithString:strValue] autorelease];	
+    }	
+	return [[NSString alloc] initWithString:strValue]
+            ;
 }
 
-+ (char) sortSectionTitle:(NSString *)string
-{
++ (char) sortSectionTitle:(NSString *)string {
 	int cLetter = 0;
 	if( !string || 0 == [string length] )
 		cLetter = '#';
-	else
-	{	
-		if( ([string characterAtIndex:0] > 64 &&  [string characterAtIndex:0] < 91 ) || 
-		   ([string characterAtIndex:0] > 96 &&  [string characterAtIndex:0] < 123 ) )
-		{
+	else {	
+		if(([string characterAtIndex:0] > 64 && [string characterAtIndex:0] < 91) || 
+		   ([string characterAtIndex:0] > 96 && [string characterAtIndex:0] < 123) ) {
 			cLetter = [string characterAtIndex:0];
-		}
-		else
-			cLetter = pinyinFirstLetter((unsigned short)[string characterAtIndex:0] );
+		} else
+			cLetter = pinyinFirstLetter((unsigned short)[string characterAtIndex:0]);
 		
-		if( cLetter > 95 )
+		if(cLetter > 95)
 			cLetter -= 32;
-	}
-	
+	}	
 	return cLetter;
 }
+
 @end
